@@ -5,10 +5,11 @@
 # (reversed and with HⅡ 十八个闪耀瞬间 entries added), into a more
 # readable and immediately consumable (by lib/models.py) format.
 
-import attrdict
 import collections
 import json
 import os
+
+import attrdict
 
 
 HERE = os.path.dirname(os.path.realpath(__file__))
