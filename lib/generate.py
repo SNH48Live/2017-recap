@@ -45,9 +45,8 @@ def convert_svg_to_png(filename):
         svg = fp.read()
     m = re.match(r'^<svg .* width="(?P<width>\d+)" height="(?P<height>\d+)">', svg)
     assert m
-    # Add some excess space to prevent clipping
-    width = int(int(m.group('width')) * 1.05)
-    height = int(int(m.group('height')) * 1.05)
+    width = int(m.group('width'))
+    height = int(m.group('height'))
     scale = 4
     png_filename = filename[:-4] + f'@{scale}x.png'
 
