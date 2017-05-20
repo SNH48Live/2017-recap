@@ -1,0 +1,63 @@
+{% set rows = (entries|length - 1) // columns + 1 -%}
+{% set column_iters = entries|splitlist(rows, columns) -%}
+{% set width = 163 * columns + 1 -%}
+{% set height = 25 * (rows + 1) + 37 -%}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}">
+  <foreignObject width="100%" height="100%">
+    <style>
+      div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
+      h1 { font: inherit; font-size: 1.2em; font-weight: bold; text-align: center; display: block; height: 36px; line-height: 36px; margin: 0; }
+      table { table-layout: fixed; border-collapse: collapse; text-align: center; }
+      table, th, td { border: 1px solid black; }
+      tr { height: 25px; }
+      th, td { width: 40px; }
+      .name { width: 80px; }
+      .header { background: #ddd; }
+      .s2 { background: #a2d5ed; }
+      .n2 { background: #be98c7; }
+      .h2 { background: #f8941d; }
+      .x { background: #b1d61b; }
+      .x2 { background: #03c070; }
+      .summary { font-weight: bold; background: #ddd; }
+    </style>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>{{ title }}</h1>
+      <table>
+        <tr class="header">
+          {%- for column in range(columns) %}
+          <th class="name">成员</th>
+          <th>场次</th>
+          <th>排名</th>
+          {%- endfor %}
+        </tr>
+        {%- for row in range(rows) %}
+        <tr>
+          {%- for column in range(columns) %}
+          {%- set entry = column_iters[column]|next %}
+
+          {#- run out of entries in this column; do nothing #}
+          {%- if not entry %}
+
+          {#- a regular entry #}
+          {%- elif entry|length == 3 %}
+          {%- set member, count, rank = entry %}
+          <td class="name {{ member.affiliation.team_id }}">{{ member.name }}</td>
+          <td>{{ count }}</td>
+          <td>{{ rank }}</td>
+
+          {#- a summary entry #}
+          {%- elif entry|length == 2 %}
+          {%- set subject, value = entry %}
+          <td class="name summary">{{ subject }}</td>
+          <td class="summary">{{ value|decimal }}</td>
+          <td class="summary"></td>
+
+          {%- endif %}
+
+          {%- endfor %}
+        </tr>
+        {%- endfor %}
+      </table>
+    </div>
+  </foreignObject>
+</svg>

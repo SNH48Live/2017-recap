@@ -1,0 +1,511 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="597" height="630">
+  <foreignObject width="100%" height="100%">
+    <style>
+      div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
+      h1 { font: inherit; font-size: 1.2em; font-weight: bold; text-align: center; display: block; height: 36px; line-height: 36px; margin: 0; }
+      table { table-layout: fixed; border-collapse: collapse; text-align: center; }
+      table, th, td { border: 1px solid black; }
+      tr { height: 25px; }
+      th, td { width: 25px; }
+      .name { height: 90px; }
+      .date { width: 75px; }
+      .total { font-weight: bold; background: #ddd; }
+      .s2 { background: #a2d5ed; }
+      .n2 { background: #be98c7; }
+      .h2 { background: #f8941d; }
+      .x { background: #b1d61b; }
+      .x2 { background: #03c070; }
+      .joint { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      .footnote { margin: 5px; font-size: 75%; text-align: justify; }
+      .footnote:before { content: "* "; }
+    </style>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>2017年度Team XⅡ常规公演出勤表</h1>
+      <table>
+        <tr>
+          <th class="name date"></th>
+          <th class="name x2">陈音</th>
+          <th class="name x2">陈韫凌</th>
+          <th class="name x2">费沁源</th>
+          <th class="name x2">洪珮雲</th>
+          <th class="name x2">姜杉</th>
+          <th class="name x2">蒋舒婷</th>
+          <th class="name x2">李佳恩</th>
+          <th class="name x2">刘增艳</th>
+          <th class="name x2">吕梦莹</th>
+          <th class="name x2">潘瑛琪</th>
+          <th class="name x2">宋雨珊</th>
+          <th class="name x2">陶波尔</th>
+          <th class="name x2">徐诗琪</th>
+          <th class="name x2">严佼君</th>
+          <th class="name x2">於佳怡</th>
+          <th class="name x2">曾晓雯</th>
+          <th class="name x2">张文静</th>
+          <th class="name x2">张怡</th>
+          <th class="name x2">邹佳佳</th>
+          <th class="name s2">赵韩倩</th>
+        </tr>
+        <tr>
+          <td class="x2">20170208</td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170211</td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170215</td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170222</td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170225</td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170301</td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170318</td>
+          <td class="x2"></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170324</td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170326</td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170329</td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170402</td>
+          <td class="x2"></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170409</td>
+          <td class="x2"></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170412</td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170414</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170419</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170421</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170430</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170506</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="x2">20170510</td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td></td>
+          <td></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+          <td class="x2"></td>
+        </tr>
+        <tr>
+          <td class="date total">总计</td>
+          <td class="total">11</td>
+          <td class="total">3</td>
+          <td class="total">10</td>
+          <td class="total">17</td>
+          <td class="total">12</td>
+          <td class="total">17</td>
+          <td class="total">14</td>
+          <td class="total">19</td>
+          <td class="total">18</td>
+          <td class="total">19</td>
+          <td class="total">19</td>
+          <td class="total">0</td>
+          <td class="total">15</td>
+          <td class="total">18</td>
+          <td class="total">10</td>
+          <td class="total">18</td>
+          <td class="total">17</td>
+          <td class="total">18</td>
+          <td class="total">19</td>
+          <td class="total">1</td>
+        </tr>
+      </table>
+    </div>
+  </foreignObject>
+</svg>

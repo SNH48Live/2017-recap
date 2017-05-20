@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <style>
+    body { margin: 0; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
+    h1, h2, h3 { text-align: center; margin: 20px auto; }
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.3em; }
+    h3 { font-size: 1.2em; }
+    a { color: inherit; text-decoration: none; border-bottom: 1px dotted; }
+    #toc, img { display: block; max-width: 1000px; margin: 20px auto; }
+    #toc ul { line-height: 1.5em; padding-left: 1.2em; }
+    hr { max-width: 1000px; margin: auto; border-top: 1px dashed #ccc; }
+    @media (max-width: 1023px) {
+      #toc, img, hr { max-width: calc(100% - 20px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>2017年度SNH48公演出勤数据回顾（制作中）</h1>
+
+  <div id="toc">
+    <strong>目录</strong>
+    <ul>
+      <li><a id="index-performances" href="#performances">公演列表</a></li>
+      <li><a id="index-summary" href="#summary">数据一览</a></li>
+      <li><a id="index-global-rank" href="#global-rank">总排名表</a></li>
+      <li>
+        <a id="index-attendance" href="#attendance">出勤明细</a>
+        <ul>
+          <li><a id="index-attendance-s2" href="#attendance-s2">Team SⅡ</a></li>
+          <li><a id="index-attendance-n2" href="#attendance-n2">Team NⅡ</a></li>
+          <li><a id="index-attendance-h2" href="#attendance-h2">Team HⅡ</a></li>
+          <li><a id="index-attendance-x" href="#attendance-x">Team X</a></li>
+          <li><a id="index-attendance-x2" href="#attendance-x2">Team XⅡ</a></li>
+          <li><a id="index-attendance-rush" href="#attendance-rush">我们向前冲</a></li>
+        </ul>
+      </li>
+      <li><a id="index-gen-rank" href="#gen-rank">分期排名表</a></li>
+      <li><a id="index-tier-rank" href="#tier-rank">总选分组数据</a></li>
+    </ul>
+  </div>
+
+  <h2 id="performances"><a href="#index-performances">公演列表</a></h2>
+  <img src="svg/performances.svg">
+  <hr>
+
+  <h2 id="summary"><a href="#index-summary">数据一览</a></h2>
+  <img src="svg/breakdown.svg">
+  <img src="svg/summary.svg">
+  <hr>
+
+  <h2 id="global-rank"><a href="#index-global-rank">总排名表</a></h2>
+  <img src="svg/global-ranking.svg">
+  <hr>
+
+  <h2 id="attendance"><a href="#index-attendance">出勤明细</a></h2>
+
+  <h3 id="attendance-s2"><a href="#index-attendance-s2">Team SⅡ</a></h3>
+  <img src="svg/s2-regular.svg">
+  <img src="svg/s2-joint.svg">
+  <img src="svg/s2-ranking.svg">
+
+  <h3 id="attendance-n2"><a href="#index-attendance-n2">Team NⅡ</a></h3>
+  <img src="svg/n2-regular.svg">
+  <img src="svg/n2-joint.svg">
+  <img src="svg/n2-ranking.svg">
+
+  <h3 id="attendance-h2"><a href="#index-attendance-h2">Team HⅡ</a></h3>
+  <img src="svg/h2-regular.svg">
+  <img src="svg/h2-joint.svg">
+  <img src="svg/h2-ranking.svg">
+
+  <h3 id="attendance-x"><a href="#index-attendance-x">Team X</a></h3>
+  <img src="svg/x-regular.svg">
+  <img src="svg/x-joint.svg">
+  <img src="svg/x-ranking.svg">
+
+  <h3 id="attendance-x2"><a href="#index-attendance-x2">Team XⅡ</a></h3>
+  <img src="svg/x2-regular.svg">
+  <img src="svg/x2-joint.svg">
+  <img src="svg/x2-ranking.svg">
+
+  <h3 id="attendance-rush"><a href="#index-attendance-rush">我们向前冲</a></h3>
+  <img src="svg/rush.svg">
+
+  <hr>
+
+  <h2 id="gen-rank"><a href="#index-gen-rank">分期排名表</a></h2>
+  <img src="svg/gen1-ranking.svg">
+  <img src="svg/gen2-ranking.svg">
+  <img src="svg/gen3-ranking.svg">
+  <img src="svg/gen4-ranking.svg">
+  <img src="svg/gen5-ranking.svg">
+  <img src="svg/gen6-ranking.svg">
+  <img src="svg/gen7-ranking.svg">
+  <img src="svg/gen8-ranking.svg">
+  <hr>
+
+  <h2 id="tier-rank"><a href="#index-tier-rank">总选分组数据</a></h2>
+  <img src="svg/tier1-stats.svg">
+  <img src="svg/tier2-stats.svg">
+  <img src="svg/tier3-stats.svg">
+  <img src="svg/tier4-stats.svg">
+
+  <script>
+    // Wrap each SVG image in a link to the original.
+    window.addEventListener('load', function(event) {
+      document.querySelectorAll('img[src$=".svg"]').forEach(function (img) {
+        var a = document.createElement('a');
+        a.href = img.src; a.target = '_blank';
+        a.style.display = 'block';
+        a.style.width = img.width.toString() + 'px';
+        a.style.margin = 'auto';
+        a.style.borderBottom = 'none';
+        img.parentNode.insertBefore(a, img);
+        a.appendChild(img);
+      });
+    });
+  </script>
+</body>
+</html>

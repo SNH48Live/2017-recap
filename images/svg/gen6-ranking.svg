@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="162">
+  <foreignObject width="100%" height="100%">
+    <style>
+      div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
+      h1 { font: inherit; font-size: 1.2em; font-weight: bold; text-align: center; display: block; height: 36px; line-height: 36px; margin: 0; }
+      table { table-layout: fixed; border-collapse: collapse; text-align: center; }
+      table, th, td { border: 1px solid black; }
+      tr { height: 25px; }
+      th, td { width: 40px; }
+      .name { width: 80px; }
+      .header { background: #ddd; }
+      .s2 { background: #a2d5ed; }
+      .n2 { background: #be98c7; }
+      .h2 { background: #f8941d; }
+      .x { background: #b1d61b; }
+      .x2 { background: #03c070; }
+      .summary { font-weight: bold; background: #ddd; }
+    </style>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>2017年度六期生公演出勤排名表</h1>
+      <table>
+        <tr class="header">
+          <th class="name">成员</th>
+          <th>场次</th>
+          <th>排名</th>
+          <th class="name">成员</th>
+          <th>场次</th>
+          <th>排名</th>
+          <th class="name">成员</th>
+          <th>场次</th>
+          <th>排名</th>
+        </tr>
+        <tr>
+          <td class="name x2">李佳恩</td>
+          <td>25</td>
+          <td>1</td>
+          <td class="name x2">吕梦莹</td>
+          <td>20</td>
+          <td>3</td>
+          <td class="name summary">中位</td>
+          <td class="summary">20</td>
+          <td class="summary"></td>
+        </tr>
+        <tr>
+          <td class="name s2">成珏</td>
+          <td>21</td>
+          <td>2</td>
+          <td class="name n2">黄彤扬</td>
+          <td>11</td>
+          <td>6</td>
+          <td class="name summary">25百分位</td>
+          <td class="summary">20.5</td>
+          <td class="summary"></td>
+        </tr>
+        <tr>
+          <td class="name h2">孙珍妮</td>
+          <td>20</td>
+          <td>3</td>
+          <td class="name x">林忆宁</td>
+          <td>11</td>
+          <td>6</td>
+          <td class="name summary">75百分位</td>
+          <td class="summary">15.5</td>
+          <td class="summary"></td>
+        </tr>
+        <tr>
+          <td class="name x">张嘉予</td>
+          <td>20</td>
+          <td>3</td>
+          <td class="name summary">平均</td>
+          <td class="summary">18.3</td>
+          <td class="summary"></td>
+        </tr>
+      </table>
+    </div>
+  </foreignObject>
+</svg>

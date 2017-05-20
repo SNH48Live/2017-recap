@@ -1,0 +1,66 @@
+{# This is an adaptation of ranking.svg -#}
+{% set rows = (entries|length - 1) // columns + 1 -%}
+{% set column_iters = entries|splitlist(rows, columns) -%}
+{% set width = 243 * columns + 1 -%}
+{% set height = 25 * (rows + 1) + 62 -%}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}">
+  <foreignObject width="100%" height="100%">
+    <style>
+      div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
+      h1 { font: inherit; font-size: 1.2em; font-weight: bold; text-align: center; display: block; height: 36px; line-height: 36px; margin: 0; }
+      table { table-layout: fixed; border-collapse: collapse; text-align: center; }
+      table, th, td { border: 1px solid black; }
+      tr { height: 25px; }
+      th, td { width: 80px; }
+      .header { background: #ddd; }
+      .s2 { background: #a2d5ed; }
+      .n2 { background: #be98c7; }
+      .h2 { background: #f8941d; }
+      .x { background: #b1d61b; }
+      .x2 { background: #03c070; }
+      .summary { font-weight: bold; background: #ddd; }
+      .footnote { margin: 5px; font-size: 75%; text-align: justify; }
+      .footnote:before { content: "* "; }
+    </style>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>{{ title }}</h1>
+      <table>
+        <tr class="header">
+          {%- for column in range(columns) %}
+          <th>成员</th>
+          <th>总选排名</th>
+          <th>场次</th>
+          {%- endfor %}
+        </tr>
+        {%- for row in range(rows) %}
+        <tr>
+          {%- for column in range(columns) %}
+          {%- set entry = column_iters[column]|next %}
+
+          {#- run out of entries in this column; do nothing #}
+          {%- if not entry %}
+
+          {#- a regular entry #}
+          {%- elif entry|length == 3 %}
+          {%- set member, election_rank, count = entry %}
+          <td class="{{ member.affiliation.team_id }}">{{ member.name }}</td>
+          <td>{{ election_rank }}</td>
+          <td>{{ count }}</td>
+
+          {#- a summary entry #}
+          {%- elif entry|length == 2 %}
+          {%- set subject, value = entry %}
+          <td class="summary">{{ subject }}</td>
+          <td class="summary"></td>
+          <td class="summary">{{ value|decimal }}</td>
+
+          {%- endif %}
+
+          {%- endfor %}
+        </tr>
+        {%- endfor %}
+      </table>
+      <footer class="footnote">{{ tier_description }}</footer>
+    </div>
+  </foreignObject>
+</svg>

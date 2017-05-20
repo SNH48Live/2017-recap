@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+here=$0:A:h
+root=$here:h
+images_dir=$root/images
+svg_dir=$images_dir/svg
+minsvg_dir=$images_dir/minsvg
+mkdir -p $minsvg_dir
+
+for svg in $svg_dir/*.svg; do
+    minsvg=$minsvg_dir/$svg:t:r.min.svg
+    svgo $svg $minsvg
+    echo $minsvg
+done

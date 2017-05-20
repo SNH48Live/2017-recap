@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="519" height="255">
+  <foreignObject width="100%" height="100%">
+    <style>
+      div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
+      h1 { font: inherit; font-size: 1.2em; font-weight: bold; text-align: center; display: block; height: 36px; line-height: 36px; margin: 0; }
+      table { table-layout: fixed; border-collapse: collapse; text-align: center; }
+      table, th, td { border: 1px solid black; }
+      tr { height: 25px; }
+      th, td { width: 25px; }
+      .name { height: 90px; }
+      .date { width: 75px; }
+      .total { font-weight: bold; background: #ddd; }
+      .s2 { background: #a2d5ed; }
+      .n2 { background: #be98c7; }
+      .h2 { background: #f8941d; }
+      .x { background: #b1d61b; }
+      .x2 { background: #03c070; }
+      .joint { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      .footnote { margin: 5px; font-size: 75%; text-align: justify; }
+      .footnote:before { content: "* "; }
+    </style>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>2017年度我们向前冲公演出勤表</h1>
+      <table>
+        <tr>
+          <th class="name date"></th>
+          <th class="name s2">成珏</th>
+          <th class="name s2">吕一</th>
+          <th class="name s2">潘燕琦</th>
+          <th class="name s2">赵韩倩</th>
+          <th class="name s2">赵晔</th>
+          <th class="name n2">江真仪</th>
+          <th class="name n2">刘菊子</th>
+          <th class="name n2">许逸</th>
+          <th class="name n2">张雅梦</th>
+          <th class="name n2">张雨鑫</th>
+          <th class="name h2">王露皎</th>
+          <th class="name h2">徐伊人</th>
+          <th class="name h2">袁一琦</th>
+          <th class="name x">姚祎纯</th>
+          <th class="name x2">陶波尔</th>
+          <th class="name x2">徐诗琪</th>
+          <th class="name x2">曾晓雯</th>
+        </tr>
+        <tr>
+          <td class="joint">20170428</td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+        </tr>
+        <tr>
+          <td class="joint">20170429</td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+        </tr>
+        <tr>
+          <td class="joint">20170512</td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+        </tr>
+        <tr>
+          <td class="joint">20170517</td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+          <td class="joint"></td>
+        </tr>
+        <tr>
+          <td class="date total">总计</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">2</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+          <td class="total">2</td>
+          <td class="total">4</td>
+          <td class="total">4</td>
+        </tr>
+      </table>
+    </div>
+  </foreignObject>
+</svg>

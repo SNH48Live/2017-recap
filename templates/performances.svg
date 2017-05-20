@@ -1,0 +1,39 @@
+{% set rows = (performances|length - 1) // columns + 1 -%}
+{% set column_iters = performances|splitlist(rows, columns) -%}
+{% set width = 480 * columns + 10 -%}
+{% set height = 26 * rows + 45 -%}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}">
+  <foreignObject width="100%" height="100%">
+    <style>
+      div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
+      h1 { font: inherit; font-size: 1.2em; font-weight: bold; text-align: center; display: block; height: 36px; line-height: 36px; margin: 0; }
+      table { table-layout: fixed; padding: 0 5px 5px 5px; border: 1px solid black; }
+      th, td { border: none; }
+      tr { height: 24px; }
+      th, td { width: 480px; }
+      {#- colors darkened for text legibility #}
+      .s2 { color: hsl(199, 68%, 60%); }
+      .n2 { color: hsl(289, 30%, 60%); }
+      .h2 { color: hsl(33, 94%, 50%); }
+      .x { color: hsl(72, 78%, 40%); }
+      .x2 { color: hsl(155, 97%, 38%); }
+      .joint { color: #444; background: linear-gradient(to right, hsl(199, 68%, 60%), hsl(289, 30%, 60%), hsl(33, 94%, 50%), hsl(72, 78%, 40%), hsl(155, 97%, 38%)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>{{ title }}</h1>
+      <table>
+        {%- for row in range(rows) %}
+        <tr>
+          {%- for column in range(columns) %}
+          {%- set performance = column_iters[column]|next %}
+          {%- if performance %}
+          {%- set affiliation = performance.affiliation.team_id if performance.affiliation else 'joint' %}
+          <td class="{{ affiliation }}">{{ performance.title.replace('SNH48 ', '') }}</td>
+          {%- endif %}
+          {%- endfor %}
+        </tr>
+        {%- endfor %}
+      </table>
+    </div>
+  </foreignObject>
+</svg>

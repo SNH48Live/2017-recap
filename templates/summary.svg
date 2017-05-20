@@ -1,0 +1,68 @@
+{% set width = 406 -%}
+{% set height = 25 * (num_entries + 1) + 5 * num_dividers + 136 -%}
+{# The reference values, usually taken to be values for the entire dataset. -#}
+{% set ref_mean, ref_median, ref_percentile25, ref_percentile75 = references -%}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}">
+  <foreignObject width="100%" height="100%">
+    <style>
+      div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
+      h1 { font: inherit; font-size: 1.2em; font-weight: bold; text-align: center; display: block; height: 36px; line-height: 36px; margin: 0; }
+      table { table-layout: fixed; border-collapse: collapse; text-align: center; }
+      table, th, td { border: 1px solid black; }
+      tr { height: 25px; }
+      tr.divider { height: 5px; }
+      th, td { width: 80px; }
+      .header { background: #ddd; }
+      {# TODO: Customize background of tier1 to tier4 based on 4th Election results. -#}
+      {# SNHXX2 -#}
+      .snh48, .gen6, .gen7, .tier1, .tier2, .tier3, .tier4 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      .s2, .gen1 { background: #a2d5ed; }
+      .n2 { background: #be98c7; }
+      .h2 { background: #f8941d; }
+      .x, .gen4 { background: #b1d61b; }
+      .x2 { background: #03c070; }
+      {# SN -#}
+      .gen2 { background: linear-gradient(to right, #a2d5ed, #be98c7); }
+      {# SNH -#}
+      .gen3 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d); }
+      {# NHX2 -#}
+      .gen5 { background: linear-gradient(to right, #be98c7, #f8941d, #03c070); }
+      {# TODO: Revisit when all announced 8th gen members are assigned to teams. -#}
+      {# HX2 -#}
+      .gen8 { background: linear-gradient(to right, #f8941d, #03c070); }
+      .high { background: #ddffdd; }
+      .low { background: #ffdddd; }
+      .footnote { margin: 5px; font-size: 75%; text-align: justify; }
+      .footnote:before { content: "* "; }
+    </style>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>{{ title }}</h1>
+      <table>
+        <tr>
+          <th></th>
+          <th class="header">平均</th>
+          <th class="header">中位</th>
+          <th class="header">25百分位</th>
+          <th class="header">75百分位</th>
+        </tr>
+        {%- for row in rows %}
+        {%- if not row %}
+        <tr class="divider"><td colspan="5"></td></tr>
+        {%- else %}
+        {%- set name, identifier, mean, median, percentile25, percentile75 = row %}
+        <tr>
+          <td class="{{ identifier }}">{{ name }}</td>
+          {%- for val, refval in [(mean, ref_mean), (median, ref_median), (percentile25, ref_percentile25), (percentile75, ref_percentile75)] %}
+          <td class="{% if val > refval %}high{% elif val < refval %}low{% endif %}">{{ val|decimal }}</td>
+          {%- endfor %}
+        </tr>
+        {%- endif %}
+        {%- endfor %}
+      </table>
+      <footer>
+        <p class="footnote">数据格背景色为浅绿色代表高于全团相应值；反之，背景色为浅红色代表高于全团相应值。白色代表持平。</p>
+        <p class="footnote">星光组、高飞组、梦想组、奔跑组为四选入圈成员根据排名的分组。星光组为1至16名，高飞组为17至32名，梦想组为33至48名，奔跑组为49至66名。</p>
+      </footer>
+    </div>
+  </foreignObject>
+</svg>

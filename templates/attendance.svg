@@ -1,0 +1,54 @@
+{% set width = 26 * members|length + 77 -%}
+{# We assume a one-liner if a footnote is provided. -#}
+{% set height = 25 * (performances|length + 1) + 130 + (25 if footnote else 0) -%}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}">
+  <foreignObject width="100%" height="100%">
+    <style>
+      div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
+      h1 { font: inherit; font-size: 1.2em; font-weight: bold; text-align: center; display: block; height: 36px; line-height: 36px; margin: 0; }
+      table { table-layout: fixed; border-collapse: collapse; text-align: center; }
+      table, th, td { border: 1px solid black; }
+      tr { height: 25px; }
+      th, td { width: 25px; }
+      .name { height: 90px; }
+      .date { width: 75px; }
+      .total { font-weight: bold; background: #ddd; }
+      .s2 { background: #a2d5ed; }
+      .n2 { background: #be98c7; }
+      .h2 { background: #f8941d; }
+      .x { background: #b1d61b; }
+      .x2 { background: #03c070; }
+      .joint { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      .footnote { margin: 5px; font-size: 75%; text-align: justify; }
+      .footnote:before { content: "* "; }
+    </style>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>{{ title }}</h1>
+      <table>
+        <tr>
+          <th class="name date"></th>
+          {%- for member in members %}
+          <th class="name {{ member.affiliation.team_id }}">{{ member.name }}</th>
+          {%- endfor %}
+        </tr>
+        {%- for performance in performances %}
+        <tr>
+          <td class="{{ affiliation }}">{{ performance.date }}</td>
+          {%- for member in members %}
+          <td{% if member in performance %} class="{{ affiliation }}"{% endif %}></td>
+          {%- endfor %}
+        </tr>
+        {%- endfor %}
+        <tr>
+          <td class="date total">总计</td>
+          {%- for member in members %}
+          <td class="total">{{ member|count(performances) }}</td>
+          {%- endfor %}
+        </tr>
+      </table>
+      {%- if footnote %}
+      <footer class="footnote">{{ footnote }}</footer>
+      {%- endif %}
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,35 @@
+#!/usr/bin/env zsh
+
+# Collect downloaded PNG images, crop, optimize, and put them into place.
+
+here=$0:A:h
+root=$here:h
+images_dir=$root/images
+svg_dir=$images_dir/svg
+png_dir=$images_dir/png
+downloads_dir=${DOWNLOADS_DIR:-$HOME/Downloads}
+mkdir -p $png_dir
+
+retval=0
+for svg in $svg_dir/*.svg; do
+    basename=${svg:t:r}@4x.png
+    original=$downloads_dir/$basename
+    dimensions="$(identify -format '%w %h' $original)" || {
+        echo "Error: Failed to identify ${(q-)original}" >&2
+        retval=1
+        continue
+    }
+    width=$dimensions[(w)1]
+    height=$dimensions[(w)2]
+    # Place the image in a larger, transparent canvas, then trim borders to get
+    # rid of any excess space in the original (which is due to discrepancies
+    # among different rendering engines; we assume the original isn't clipped
+    # due to underestimation).
+    output=$png_dir/$basename
+    (( width += 100 ))
+    (( height += 100 ))
+    convert $original -gravity center -background none -extent ${width}x${height} -trim +repage $output
+    optipng $output
+    rm $original
+done
+exit $retval

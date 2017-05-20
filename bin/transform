@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+
+# Transform performances.raw.json, imported from
+# https://raw.githubusercontent.com/SNH48Live/SNH48Live/master/performances.json
+# (reversed and with HⅡ 十八个闪耀瞬间 entries added), into a more
+# readable and immediately consumable (by lib/models.py) format.
+
+import attrdict
+import collections
+import json
+import os
+
+
+HERE = os.path.dirname(os.path.realpath(__file__))
+ROOT = os.path.dirname(HERE)
+DATA_DIR = os.path.join(ROOT, 'data')
+
+
+def transform(obj):
+    obj = attrdict.AttrDict(obj)
+    return collections.OrderedDict([
+        ('date', obj.title[:8]),
+        ('affiliation', obj.team),
+        ('stage', obj.stage),
+        ('title', obj.title),
+        ('performers', obj.performers.split(',')[:-1]),
+    ])
+
+
+def main():
+    objs = []
+    with open(os.path.join(DATA_DIR, 'performances.raw.json')) as fin:
+        for line in fin:
+            objs.append(transform(json.loads(line)))
+    with open(os.path.join(DATA_DIR, 'performances.json'), 'w') as fout:
+        json.dump(objs, fout, ensure_ascii=False, indent=2)
+
+
+if __name__ == '__main__':
+    main()
