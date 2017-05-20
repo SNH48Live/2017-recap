@@ -15,6 +15,8 @@ Look into `bin`.
 
 # Notes
 
+- SVG to PNG basically requires Chrome/Blink. DOM elements are rendered with slightly different heights/widths in Firefox/Gecko, resulting in clipped images. In Safari the canvas can't even be converted to PNG — it is tainted despite loading a first-party SVG, which I believe is due to [this bug](https://bugs.chromium.org/p/chromium/issues/detail?id=294129). (Chrome suffers from the same bug if the SVG is loaded through an HTTP request from the same origin, but not when the SVG is directly embedded in the HTML.) By the way, I didn't bother to include an `HTMLCanvasElement.toBlob` polyfill. Maybe I should, for Opera/Blink, with which I didn't test.
+
 - I convert SVG to PNG via the browser (`bin/generate --png`). This makes full automation hard; PNG images are download from the browser, and one has to run `bin/collect` to crop and put them in place.
 
   Sure there are fully automated solutions, but I found none that I was happy with. There's the PhantomJS-based [svg2png](https://github.com/domenic/svg2png) which seemed to the closest, but its canvas scaling is crap (nonexistent), and one has to manually patch it to zoom in on the canvas (the patch is simple, but having to patch an npm package is apparently not considered frictionless development process) — I really need to blow up the canvas 4x to get crispy text rendering, even on latest Chrome, with a `<canvas>` tag, which is the magic behind the current implementation.
