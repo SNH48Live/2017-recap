@@ -39,24 +39,33 @@ os.makedirs(SVG_DIR, exist_ok=True)
 YEAR = 2017
 
 
-def convert_svg_to_png(filename):
-    assert filename.endswith('.svg')
-    with open(os.path.join(SVG_DIR, filename)) as fp:
-        svg = fp.read()
-    m = re.match(r'^<svg .* width="(?P<width>\d+)" height="(?P<height>\d+)">', svg)
-    assert m
-    width = int(m.group('width'))
-    height = int(m.group('height'))
+def convert_svg_to_png():
     scale = 4
-    png_filename = filename[:-4] + f'@{scale}x.png'
+    items = []
+    for filename in convert_svg_to_png.queue:
+        with open(os.path.join(SVG_DIR, filename)) as fp:
+            svg = fp.read()
+        m = re.match(r'^<svg .* width="(?P<width>\d+)" height="(?P<height>\d+)">', svg)
+        assert m
+        width = int(m.group('width'))
+        height = int(m.group('height'))
+        png_filename = filename[:-4] + f'@{scale}x.png'
+        items.append((svg, width, height, png_filename))
 
     fd, path = tempfile.mkstemp(suffix='.html')
     os.close(fd)
     with open(path, 'w') as fp:
-        fp.write(CONVERTER_TEMPLATE.render(
-            svg=svg, width=width, height=height, scale_factor=scale, output_filename=png_filename,
-        ))
+        fp.write(CONVERTER_TEMPLATE.render(scale_factor=scale, items=items))
     webbrowser.open(path)
+
+    convert_svg_to_png.queue.clear()
+
+convert_svg_to_png.queue = []
+
+
+def queue_svg_for_conversion(filename):
+    assert filename.endswith('.svg')
+    convert_svg_to_png.queue.append(filename)
 
 
 def render(template, filename, **render_args):
@@ -65,7 +74,7 @@ def render(template, filename, **render_args):
         print(template.render(**render_args), file=fp)
     print(path)
     if render.generate_png:
-        convert_svg_to_png(filename)
+        queue_svg_for_conversion(filename)
 
 render.generate_png = False
 
@@ -298,6 +307,9 @@ def main():
         generate_tier_stats(tier)
     generate_summary()
     generate_attendance_tables()
+
+    if args.png:
+        convert_svg_to_png()
 
 
 if __name__ == '__main__':
