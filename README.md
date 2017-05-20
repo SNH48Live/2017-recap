@@ -2,7 +2,7 @@
 
 Current summary (not up-to-date; also stats for 4th Election tiers are apparently nonsense at this moment):
 
-![](images/svg/summary.svg)
+![](https://rawgit.com/SNH48Live/2017-recap/master/images/svg/summary.svg)
 
 A full demo from the master branch can be found at <https://snh48live.org/2017-recap>.
 
