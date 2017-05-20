@@ -1,5 +1,8 @@
 # 2017 recap — SNH48 stage performance stats (work in progress)
 
+[![code license: MIT](https://img.shields.io/badge/code%20license-MIT-blue.svg?maxAge=2592000)](COPYING)
+[![assets license: CC0](https://img.shields.io/badge/assets%20license-CC0-blue.svg?maxAge=2592000)](COPYING)
+
 Current summary (not up-to-date; also stats for 4th Election tiers are apparently nonsense at this moment):
 
 ![](https://rawgit.com/SNH48Live/2017-recap/master/images/svg/summary.svg)
@@ -25,3 +28,10 @@ Look into `bin`.
 - Fill out tier members in `lib/models.py` after the 4th Election.
 - Populate `data/performances.raw.json` gradually and at the end of the year.
 - Grep for the string `TODO` in the code base.
+
+# License
+
+- Code (files outside `images`) are licensed under MIT;
+- Assets (files inside `images`) are licensed under CC0.
+
+See [`COPYING`](COPYING) for details.
