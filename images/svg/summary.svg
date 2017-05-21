@@ -36,8 +36,8 @@
         </tr>
         <tr>
           <td class="snh48">SNH48</td>
-          <td class="">15.5</td>
-          <td class="">16.5</td>
+          <td class="">16.0</td>
+          <td class="">17</td>
           <td class="">21</td>
           <td class="">12</td>
         </tr>
@@ -45,7 +45,7 @@
         <tr>
           <td class="s2">Team SⅡ</td>
           <td class="high">16.6</td>
-          <td class="high">17</td>
+          <td class="">17</td>
           <td class="low">20</td>
           <td class="high">14</td>
         </tr>
@@ -58,10 +58,10 @@
         </tr>
         <tr>
           <td class="h2">Team HⅡ</td>
-          <td class="high">17.4</td>
-          <td class="high">20.5</td>
-          <td class="high">21.2</td>
-          <td class="high">15.8</td>
+          <td class="high">19.1</td>
+          <td class="high">22.5</td>
+          <td class="high">23.2</td>
+          <td class="high">16.8</td>
         </tr>
         <tr>
           <td class="x">Team X</td>
@@ -72,10 +72,10 @@
         </tr>
         <tr>
           <td class="x2">Team XⅡ</td>
-          <td class="high">17.1</td>
-          <td class="high">20</td>
-          <td class="">21</td>
-          <td class="high">13.5</td>
+          <td class="high">18</td>
+          <td class="high">21</td>
+          <td class="high">22</td>
+          <td class="high">14</td>
         </tr>
         <tr class="divider"><td colspan="5"></td></tr>
         <tr>
@@ -94,10 +94,10 @@
         </tr>
         <tr>
           <td class="gen3">三期生</td>
-          <td class="high">18.9</td>
-          <td class="high">19.5</td>
-          <td class="">21</td>
-          <td class="high">17.2</td>
+          <td class="high">20.1</td>
+          <td class="high">20.5</td>
+          <td class="high">23</td>
+          <td class="high">18.2</td>
         </tr>
         <tr>
           <td class="gen4">四期生</td>
@@ -108,31 +108,31 @@
         </tr>
         <tr>
           <td class="gen5">五期生</td>
-          <td class="high">16.7</td>
-          <td class="high">19</td>
-          <td class="">21</td>
+          <td class="high">17.6</td>
+          <td class="high">20</td>
+          <td class="high">22</td>
           <td class="">12</td>
         </tr>
         <tr>
           <td class="gen6">六期生</td>
-          <td class="high">18.3</td>
-          <td class="high">20</td>
-          <td class="low">20.5</td>
+          <td class="high">18.9</td>
+          <td class="high">21</td>
+          <td class="high">21.5</td>
           <td class="high">15.5</td>
         </tr>
         <tr>
           <td class="gen7">七期生</td>
-          <td class="high">19.2</td>
+          <td class="high">19.5</td>
           <td class="high">22</td>
           <td class="high">23</td>
           <td class="high">15</td>
         </tr>
         <tr>
           <td class="gen8">八期生</td>
-          <td class="low">1.7</td>
+          <td class="low">2.7</td>
+          <td class="low">3</td>
+          <td class="low">3.5</td>
           <td class="low">2</td>
-          <td class="low">2</td>
-          <td class="low">1.5</td>
         </tr>
         <tr class="divider"><td colspan="5"></td></tr>
         <tr>
@@ -151,17 +151,17 @@
         </tr>
         <tr>
           <td class="tier3">梦想组</td>
-          <td class="high">22</td>
-          <td class="high">22</td>
-          <td class="high">22</td>
-          <td class="high">22</td>
+          <td class="high">23</td>
+          <td class="high">23</td>
+          <td class="high">23</td>
+          <td class="high">23</td>
         </tr>
         <tr>
           <td class="tier4">奔跑组</td>
-          <td class="high">21</td>
-          <td class="high">21</td>
-          <td class="">21</td>
-          <td class="high">21</td>
+          <td class="high">23</td>
+          <td class="high">23</td>
+          <td class="high">23</td>
+          <td class="high">23</td>
         </tr>
       </table>
       <footer>
