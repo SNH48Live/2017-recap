@@ -1,6 +1,6 @@
 {% set rows = (performances|length - 1) // columns + 1 -%}
 {% set column_iters = performances|splitlist(rows, columns) -%}
-{% set width = 480 * columns + 10 -%}
+{% set width = 490 * columns + 10 -%}
 {% set height = 26 * rows + 45 -%}
 <svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}">
   <foreignObject width="100%" height="100%">
