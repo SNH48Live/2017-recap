@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="857" height="930">
+<svg xmlns="http://www.w3.org/2000/svg" width="857" height="955">
   <foreignObject width="100%" height="100%">
     <style>
       div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
@@ -1079,28 +1079,61 @@
           <td></td>
         </tr>
         <tr>
+          <td class="h2">20170628</td>
+          <td class="h2"></td>
+          <td></td>
+          <td></td>
+          <td class="h2"></td>
+          <td></td>
+          <td class="h2"></td>
+          <td class="h2"></td>
+          <td></td>
+          <td class="h2"></td>
+          <td class="h2"></td>
+          <td></td>
+          <td class="h2"></td>
+          <td></td>
+          <td class="h2"></td>
+          <td></td>
+          <td class="h2"></td>
+          <td class="h2"></td>
+          <td></td>
+          <td class="h2"></td>
+          <td class="h2"></td>
+          <td class="h2"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
           <td class="date total">总计</td>
-          <td class="total">9</td>
+          <td class="total">10</td>
           <td class="total">25</td>
           <td class="total">16</td>
-          <td class="total">30</td>
+          <td class="total">31</td>
           <td class="total">26</td>
-          <td class="total">28</td>
-          <td class="total">30</td>
+          <td class="total">29</td>
+          <td class="total">31</td>
           <td class="total">21</td>
-          <td class="total">6</td>
-          <td class="total">29</td>
+          <td class="total">7</td>
+          <td class="total">30</td>
           <td class="total">5</td>
-          <td class="total">22</td>
+          <td class="total">23</td>
           <td class="total">30</td>
-          <td class="total">29</td>
           <td class="total">30</td>
-          <td class="total">19</td>
-          <td class="total">29</td>
+          <td class="total">30</td>
+          <td class="total">20</td>
+          <td class="total">30</td>
           <td class="total">17</td>
-          <td class="total">29</td>
-          <td class="total">29</td>
-          <td class="total">6</td>
+          <td class="total">30</td>
+          <td class="total">30</td>
+          <td class="total">7</td>
           <td class="total">1</td>
           <td class="total">1</td>
           <td class="total">1</td>
