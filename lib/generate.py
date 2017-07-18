@@ -153,10 +153,13 @@ def generate_tier_stats(tier_num):
     table_rows.append(('75百分位', tier.percentile75))
 
     tier_descriptions = {
-        1: '星光组包括四选1至16名的成员。',
-        2: '高飞组包括四选17至32名的成员。',
-        3: '梦想组包括四选33至48名的成员。',
-        4: '奔跑组包括四选49至64名的成员。',
+        '3-1': '高飞组包括三选1至16名的成员。',
+        '3-2': '梦想组包括三选17至32名的成员。',
+        '3-3': '起飞组包括三选33至48名的成员。',
+        '4-1': '星光组包括四选1至16名的成员。',
+        '4-2': '高飞组包括四选17至32名的成员。',
+        '4-3': '梦想组包括四选33至48名的成员。',
+        '4-4': '奔跑组包括四选49至64名的成员。',
     }
     render_args = dict(
         title=f'{YEAR}年度{tier}公演出勤统计表',
@@ -211,7 +214,7 @@ def generate_summary():
         generation = SNH48.generations[gen_num]
         loop_vars.append((generation, str(generation), f'gen{gen_num}'))
     loop_vars.append(divider)
-    for tier_num in range(1, 5):
+    for tier_num in TIERS:
         tier = SNH48.tiers[tier_num]
         loop_vars.append((tier, str(tier), f'tier{tier_num}'))
 
@@ -303,7 +306,7 @@ def main():
         generate_ranking(SNH48.teams[team_id], f'{team_id}-ranking.svg')
     for generation in range(1, 9):
         generate_ranking(SNH48.generations[generation], f'gen{generation}-ranking.svg')
-    for tier in range(1, 5):
+    for tier in TIERS:
         generate_tier_stats(tier)
     generate_summary()
     generate_attendance_tables()
