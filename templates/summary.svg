@@ -14,23 +14,29 @@
       th, td { width: 80px; }
       td.category { width: 100px; }
       .header { background: #ddd; }
-      {# TODO: Customize background of tier1 to tier4 based on 4th Election results. -#}
-      {# SNHXX2 -#}
-      .snh48, .gen6, .gen7, .tier1, .tier2, .tier3, .tier4 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      {# TODO: Customize background of tier4-1 to tier4-4 based on 4th Election results. -#}
+      {# S N H X X2 -#}
+      .snh48, .gen6, .gen7, .tier3-2 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      {# S #}
       .s2, .gen1 { background: #a2d5ed; }
+      {# N #}
       .n2 { background: #be98c7; }
+      {# H #}
       .h2 { background: #f8941d; }
+      {# X #}
       .x, .gen4 { background: #b1d61b; }
+      {# X2 #}
       .x2 { background: #03c070; }
-      {# SN -#}
+      {# S N -#}
       .gen2 { background: linear-gradient(to right, #a2d5ed, #be98c7); }
-      {# SNH -#}
+      {# S N H -#}
       .gen3 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d); }
-      {# NHX2 -#}
-      .gen5 { background: linear-gradient(to right, #be98c7, #f8941d, #03c070); }
-      {# TODO: Revisit when all announced 8th gen members are assigned to teams. -#}
-      {# HX2 -#}
-      .gen8 { background: linear-gradient(to right, #f8941d, #03c070); }
+      {# S N H X -#}
+      .tier3-1 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b); }
+      {# S H X X2 -#}
+      .tier3-3 { background: linear-gradient(to right, #a2d5ed, #f8941d, #b1d61b, #03c070); }
+      {# N H X2 -#}
+      .gen5, .gen8 { background: linear-gradient(to right, #be98c7, #f8941d, #03c070); }
       .high { background: #ddffdd; }
       .low { background: #ffdddd; }
       .footnote { margin: 5px; font-size: 75%; text-align: justify; }
