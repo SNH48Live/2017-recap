@@ -1,4 +1,4 @@
-{% set width = 406 -%}
+{% set width = 426 -%}
 {% set height = 25 * (num_entries + 1) + 5 * num_dividers + 136 -%}
 {# The reference values, usually taken to be values for the entire dataset. -#}
 {% set ref_mean, ref_median, ref_percentile25, ref_percentile75 = references -%}
@@ -12,6 +12,7 @@
       tr { height: 25px; }
       tr.divider { height: 5px; }
       th, td { width: 80px; }
+      td.category { width: 100px; }
       .header { background: #ddd; }
       {# TODO: Customize background of tier1 to tier4 based on 4th Election results. -#}
       {# SNHXX2 -#}
@@ -49,9 +50,9 @@
         {%- if not row %}
         <tr class="divider"><td colspan="5"></td></tr>
         {%- else %}
-        {%- set name, identifier, mean, median, percentile25, percentile75 = row %}
+        {%- set category, identifier, mean, median, percentile25, percentile75 = row %}
         <tr>
-          <td class="{{ identifier }}">{{ name }}</td>
+          <td class="category {{ identifier }}">{{ category }}</td>
           {%- for val, refval in [(mean, ref_mean), (median, ref_median), (percentile25, ref_percentile25), (percentile75, ref_percentile75)] %}
           <td class="{% if val > refval %}high{% elif val < refval %}low{% endif %}">{{ val|decimal }}</td>
           {%- endfor %}
