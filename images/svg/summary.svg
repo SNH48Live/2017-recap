@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="406" height="701">
+<svg xmlns="http://www.w3.org/2000/svg" width="426" height="701">
   <foreignObject width="100%" height="100%">
     <style>
       div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
@@ -8,17 +8,24 @@
       tr { height: 25px; }
       tr.divider { height: 5px; }
       th, td { width: 80px; }
+      td.category { width: 100px; }
       .header { background: #ddd; }
-      .snh48, .gen6, .gen7, .tier1, .tier2, .tier3, .tier4 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      .snh48, .gen6, .gen7, .tier3-2 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      
       .s2, .gen1 { background: #a2d5ed; }
+      
       .n2 { background: #be98c7; }
+      
       .h2 { background: #f8941d; }
+      
       .x, .gen4 { background: #b1d61b; }
+      
       .x2 { background: #03c070; }
       .gen2 { background: linear-gradient(to right, #a2d5ed, #be98c7); }
       .gen3 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d); }
-      .gen5 { background: linear-gradient(to right, #be98c7, #f8941d, #03c070); }
-      .gen8 { background: linear-gradient(to right, #f8941d, #03c070); }
+      .tier3-1 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b); }
+      .tier3-3 { background: linear-gradient(to right, #a2d5ed, #f8941d, #b1d61b, #03c070); }
+      .gen5, .gen8 { background: linear-gradient(to right, #be98c7, #f8941d, #03c070); }
       .high { background: #ddffdd; }
       .low { background: #ffdddd; }
       .footnote { margin: 5px; font-size: 75%; text-align: justify; }
@@ -35,7 +42,7 @@
           <th class="header">75百分位</th>
         </tr>
         <tr>
-          <td class="snh48">SNH48</td>
+          <td class="category snh48">SNH48</td>
           <td class="">24.3</td>
           <td class="">25</td>
           <td class="">31</td>
@@ -43,35 +50,35 @@
         </tr>
         <tr class="divider"><td colspan="5"></td></tr>
         <tr>
-          <td class="s2">Team SⅡ</td>
+          <td class="category s2">Team SⅡ</td>
           <td class="high">25.0</td>
           <td class="high">25.5</td>
           <td class="low">30</td>
           <td class="high">22.8</td>
         </tr>
         <tr>
-          <td class="n2">Team NⅡ</td>
+          <td class="category n2">Team NⅡ</td>
           <td class="low">16.8</td>
           <td class="low">19</td>
           <td class="low">24.5</td>
           <td class="low">10.2</td>
         </tr>
         <tr>
-          <td class="h2">Team HⅡ</td>
+          <td class="category h2">Team HⅡ</td>
           <td class="high">28.0</td>
           <td class="high">31</td>
           <td class="high">35</td>
           <td class="high">20</td>
         </tr>
         <tr>
-          <td class="x">Team X</td>
+          <td class="category x">Team X</td>
           <td class="high">27.2</td>
           <td class="high">28.5</td>
           <td class="">31</td>
           <td class="high">20.5</td>
         </tr>
         <tr>
-          <td class="x2">Team XⅡ</td>
+          <td class="category x2">Team XⅡ</td>
           <td class="high">26.9</td>
           <td class="high">30</td>
           <td class="high">34.2</td>
@@ -79,56 +86,56 @@
         </tr>
         <tr class="divider"><td colspan="5"></td></tr>
         <tr>
-          <td class="gen1">一期生</td>
+          <td class="category gen1">一期生</td>
           <td class="low">21.7</td>
           <td class="low">23</td>
           <td class="low">24.5</td>
           <td class="high">21.8</td>
         </tr>
         <tr>
-          <td class="gen2">二期生</td>
+          <td class="category gen2">二期生</td>
           <td class="low">16.8</td>
           <td class="low">18.5</td>
           <td class="low">24</td>
           <td class="low">11</td>
         </tr>
         <tr>
-          <td class="gen3">三期生</td>
+          <td class="category gen3">三期生</td>
           <td class="high">30.1</td>
           <td class="high">31</td>
           <td class="high">34.2</td>
           <td class="high">28</td>
         </tr>
         <tr>
-          <td class="gen4">四期生</td>
+          <td class="category gen4">四期生</td>
           <td class="high">25.9</td>
           <td class="">25</td>
           <td class="low">30.8</td>
           <td class="high">20</td>
         </tr>
         <tr>
-          <td class="gen5">五期生</td>
+          <td class="category gen5">五期生</td>
           <td class="high">27.2</td>
           <td class="high">29.5</td>
           <td class="high">34</td>
           <td class="high">21.5</td>
         </tr>
         <tr>
-          <td class="gen6">六期生</td>
+          <td class="category gen6">六期生</td>
           <td class="high">26.4</td>
           <td class="high">27</td>
           <td class="">31</td>
           <td class="high">22</td>
         </tr>
         <tr>
-          <td class="gen7">七期生</td>
+          <td class="category gen7">七期生</td>
           <td class="high">31.4</td>
           <td class="high">35.5</td>
           <td class="high">38</td>
           <td class="high">25.5</td>
         </tr>
         <tr>
-          <td class="gen8">八期生</td>
+          <td class="category gen8">八期生</td>
           <td class="low">11</td>
           <td class="low">10</td>
           <td class="low">12.5</td>
@@ -136,49 +143,49 @@
         </tr>
         <tr class="divider"><td colspan="5"></td></tr>
         <tr>
-          <td class="tier3-1">三选高飞组</td>
+          <td class="category tier3-1">三选高飞组</td>
           <td class="low">17.4</td>
           <td class="low">20</td>
           <td class="low">22.2</td>
           <td class="low">13.8</td>
         </tr>
         <tr>
-          <td class="tier3-2">三选梦想组</td>
+          <td class="category tier3-2">三选梦想组</td>
           <td class="low">22.5</td>
           <td class="low">24</td>
           <td class="low">28</td>
           <td class="high">18.5</td>
         </tr>
         <tr>
-          <td class="tier3-3">三选起飞组</td>
+          <td class="category tier3-3">三选起飞组</td>
           <td class="high">28</td>
           <td class="high">30</td>
           <td class="high">34</td>
           <td class="high">23</td>
         </tr>
         <tr>
-          <td class="tier4-1">四选星光组</td>
+          <td class="category tier4-1">四选星光组</td>
           <td class="low">19</td>
           <td class="low">19</td>
           <td class="low">19</td>
           <td class="high">19</td>
         </tr>
         <tr>
-          <td class="tier4-2">四选高飞组</td>
+          <td class="category tier4-2">四选高飞组</td>
           <td class="high">34</td>
           <td class="high">34</td>
           <td class="high">34</td>
           <td class="high">34</td>
         </tr>
         <tr>
-          <td class="tier4-3">四选梦想组</td>
+          <td class="category tier4-3">四选梦想组</td>
           <td class="high">31</td>
           <td class="high">31</td>
           <td class="">31</td>
           <td class="high">31</td>
         </tr>
         <tr>
-          <td class="tier4-4">四选奔跑组</td>
+          <td class="category tier4-4">四选奔跑组</td>
           <td class="low">18</td>
           <td class="low">18</td>
           <td class="low">18</td>
