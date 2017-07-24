@@ -32,18 +32,18 @@
         </tr>
         <tr>
           <td class="name n2">刘菊子</td>
-          <td>34</td>
+          <td>35</td>
           <td>1</td>
           <td class="name n2">张雅梦</td>
           <td>21</td>
           <td>10</td>
-          <td class="name n2">金莹玥</td>
+          <td class="name n2">黄婷婷</td>
           <td>10</td>
-          <td>20</td>
+          <td>21</td>
         </tr>
         <tr>
           <td class="name n2">张雨鑫</td>
-          <td>31</td>
+          <td>32</td>
           <td>2</td>
           <td class="name n2">李艺彤</td>
           <td>20</td>
@@ -53,8 +53,8 @@
           <td>22</td>
         </tr>
         <tr>
-          <td class="name n2">陈问言</td>
-          <td>28</td>
+          <td class="name n2">江真仪</td>
+          <td>29</td>
           <td>3</td>
           <td class="name n2">曾艳芬</td>
           <td>20</td>
@@ -64,9 +64,9 @@
           <td>23</td>
         </tr>
         <tr>
-          <td class="name n2">江真仪</td>
+          <td class="name n2">陈问言</td>
           <td>28</td>
-          <td>3</td>
+          <td>4</td>
           <td class="name n2">易嘉爱</td>
           <td>19</td>
           <td>14</td>
@@ -75,8 +75,8 @@
           <td>24</td>
         </tr>
         <tr>
-          <td class="name n2">万丽娜</td>
-          <td>26</td>
+          <td class="name n2">许逸</td>
+          <td>27</td>
           <td>5</td>
           <td class="name n2">陈佳莹</td>
           <td>18</td>
@@ -86,9 +86,9 @@
           <td>25</td>
         </tr>
         <tr>
-          <td class="name n2">许逸</td>
+          <td class="name n2">万丽娜</td>
           <td>26</td>
-          <td>5</td>
+          <td>6</td>
           <td class="name n2">何晓玉</td>
           <td>18</td>
           <td>15</td>
@@ -104,7 +104,7 @@
           <td>17</td>
           <td>17</td>
           <td class="name summary">平均</td>
-          <td class="summary">17.3</td>
+          <td class="summary">17.5</td>
           <td class="summary"></td>
         </tr>
         <tr>
@@ -133,11 +133,11 @@
           <td class="name n2">林思意</td>
           <td>21</td>
           <td>10</td>
-          <td class="name n2">黄婷婷</td>
-          <td>10</td>
-          <td>20</td>
+          <td class="name n2">金莹玥</td>
+          <td>11</td>
+          <td>19</td>
           <td class="name summary">75百分位</td>
-          <td class="summary">10.2</td>
+          <td class="summary">11</td>
           <td class="summary"></td>
         </tr>
       </table>
