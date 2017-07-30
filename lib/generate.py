@@ -77,7 +77,7 @@ def render(template, filename, **render_args):
         if content != existing_content:
             with open(path, 'w') as fp:
                 fp.write(content)
-    print(path)
+            print(path)
     if render.generate_png:
         queue_svg_for_conversion(filename)
 
