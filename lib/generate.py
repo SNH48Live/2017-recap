@@ -70,8 +70,13 @@ def queue_svg_for_conversion(filename):
 
 def render(template, filename, **render_args):
     path = os.path.join(SVG_DIR, filename)
-    with open(path, 'w') as fp:
-        print(template.render(**render_args), file=fp)
+    content = template.render(**render_args)
+    if os.path.exists(path):
+        with open(path, 'r') as fp:
+            existing_content = fp.read()
+        if content != existing_content:
+            with open(path, 'w') as fp:
+                fp.write(content)
     print(path)
     if render.generate_png:
         queue_svg_for_conversion(filename)
