@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="730" height="137">
+<svg xmlns="http://www.w3.org/2000/svg" width="730" height="262">
   <foreignObject width="100%" height="100%">
     <style>
       div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
@@ -32,23 +32,75 @@
           <th>场次</th>
         </tr>
         <tr>
-          <td class="n2">李艺彤</td>
+          <td class="n2">鞠婧祎</td>
           <td>1</td>
-          <td>20</td>
-          <td class="summary">中位</td>
-          <td class="summary"></td>
-          <td class="summary">20</td>
-          <td class="summary">75百分位</td>
-          <td class="summary"></td>
-          <td class="summary">20</td>
+          <td>0</td>
+          <td class="s2">莫寒</td>
+          <td>8</td>
+          <td>24</td>
+          <td class="s2">李宇琪</td>
+          <td>16</td>
+          <td>27</td>
         </tr>
         <tr>
+          <td class="n2">李艺彤</td>
+          <td>2</td>
+          <td>20</td>
+          <td class="s2">张语格</td>
+          <td>9</td>
+          <td>14</td>
           <td class="summary">平均</td>
           <td class="summary"></td>
-          <td class="summary">20</td>
+          <td class="summary">19</td>
+        </tr>
+        <tr>
+          <td class="n2">黄婷婷</td>
+          <td>3</td>
+          <td>10</td>
+          <td class="s2">许佳琪</td>
+          <td>10</td>
+          <td>22</td>
+          <td class="summary">中位</td>
+          <td class="summary"></td>
+          <td class="summary">21</td>
+        </tr>
+        <tr>
+          <td class="n2">冯薪朵</td>
+          <td>4</td>
+          <td>17</td>
+          <td class="s2">戴萌</td>
+          <td>11</td>
+          <td>24</td>
           <td class="summary">25百分位</td>
           <td class="summary"></td>
-          <td class="summary">20</td>
+          <td class="summary">24</td>
+        </tr>
+        <tr>
+          <td class="n2">陆婷</td>
+          <td>5</td>
+          <td>22</td>
+          <td class="s2">孔肖吟</td>
+          <td>12</td>
+          <td>25</td>
+          <td class="summary">75百分位</td>
+          <td class="summary"></td>
+          <td class="summary">16</td>
+        </tr>
+        <tr>
+          <td class="n2">曾艳芬</td>
+          <td>6</td>
+          <td>20</td>
+          <td class="n2">林思意</td>
+          <td>14</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td class="n2">赵粤</td>
+          <td>7</td>
+          <td>15</td>
+          <td class="s2">吴哲晗</td>
+          <td>15</td>
+          <td>24</td>
         </tr>
       </table>
       <footer class="footnote">四选星光组包括1至16名的成员。</footer>

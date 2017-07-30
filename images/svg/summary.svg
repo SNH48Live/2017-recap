@@ -10,7 +10,7 @@
       th, td { width: 80px; }
       td.category { width: 100px; }
       .header { background: #ddd; }
-      .snh48, .gen6, .gen7, .tier3-2 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      .snh48, .gen6, .gen7, .tier3-2, .tier4-2, .tier4-4 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
       
       .s2, .gen1 { background: #a2d5ed; }
       
@@ -21,10 +21,10 @@
       .x, .gen4 { background: #b1d61b; }
       
       .x2 { background: #03c070; }
-      .gen2 { background: linear-gradient(to right, #a2d5ed, #be98c7); }
+      .gen2, .tier4-1 { background: linear-gradient(to right, #a2d5ed, #be98c7); }
       .gen3 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d); }
       .tier3-1 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b); }
-      .tier3-3 { background: linear-gradient(to right, #a2d5ed, #f8941d, #b1d61b, #03c070); }
+      .tier3-3, .tier4-3 { background: linear-gradient(to right, #a2d5ed, #f8941d, #b1d61b, #03c070); }
       .gen5, .gen8 { background: linear-gradient(to right, #be98c7, #f8941d, #03c070); }
       .high { background: #ddffdd; }
       .low { background: #ffdddd; }
@@ -165,31 +165,31 @@
         </tr>
         <tr>
           <td class="category tier4-1">四选星光组</td>
-          <td class="low">20</td>
-          <td class="low">20</td>
-          <td class="low">20</td>
-          <td class="high">20</td>
+          <td class="low">19</td>
+          <td class="low">21</td>
+          <td class="low">24</td>
+          <td class="low">16</td>
         </tr>
         <tr>
           <td class="category tier4-2">四选高飞组</td>
-          <td class="high">36</td>
-          <td class="high">36</td>
-          <td class="high">36</td>
-          <td class="high">36</td>
+          <td class="high">28.2</td>
+          <td class="high">29</td>
+          <td class="low">31</td>
+          <td class="high">26</td>
         </tr>
         <tr>
           <td class="category tier4-3">四选梦想组</td>
-          <td class="high">32</td>
-          <td class="high">32</td>
-          <td class="">32</td>
-          <td class="high">32</td>
+          <td class="high">30.3</td>
+          <td class="high">31</td>
+          <td class="high">34</td>
+          <td class="high">21.5</td>
         </tr>
         <tr>
           <td class="category tier4-4">四选奔跑组</td>
-          <td class="low">18</td>
-          <td class="low">18</td>
-          <td class="low">18</td>
-          <td class="low">18</td>
+          <td class="high">28.8</td>
+          <td class="high">30</td>
+          <td class="high">35</td>
+          <td class="high">22</td>
         </tr>
       </table>
       <footer>

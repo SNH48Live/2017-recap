@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="730" height="137">
+<svg xmlns="http://www.w3.org/2000/svg" width="730" height="237">
   <foreignObject width="100%" height="100%">
     <style>
       div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
@@ -32,23 +32,67 @@
           <th>场次</th>
         </tr>
         <tr>
-          <td class="n2">何晓玉</td>
-          <td>50</td>
-          <td>18</td>
-          <td class="summary">中位</td>
-          <td class="summary"></td>
-          <td class="summary">18</td>
-          <td class="summary">75百分位</td>
-          <td class="summary"></td>
-          <td class="summary">18</td>
+          <td class="x2">洪珮雲</td>
+          <td>49</td>
+          <td>31</td>
+          <td class="h2">袁一琦</td>
+          <td>56</td>
+          <td>42</td>
+          <td class="h2">沈梦瑶</td>
+          <td>65</td>
+          <td>36</td>
         </tr>
         <tr>
+          <td class="h2">郝婉晴</td>
+          <td>51</td>
+          <td>32</td>
+          <td class="n2">何晓玉</td>
+          <td>59</td>
+          <td>18</td>
           <td class="summary">平均</td>
           <td class="summary"></td>
-          <td class="summary">18</td>
+          <td class="summary">28.8</td>
+        </tr>
+        <tr>
+          <td class="x">杨韫玉</td>
+          <td>52</td>
+          <td>15</td>
+          <td class="h2">谢妮</td>
+          <td>60</td>
+          <td>35</td>
+          <td class="summary">中位</td>
+          <td class="summary"></td>
+          <td class="summary">30</td>
+        </tr>
+        <tr>
+          <td class="x">张丹三</td>
+          <td>53</td>
+          <td>20</td>
+          <td class="s2">陈观慧</td>
+          <td>61</td>
+          <td>22</td>
           <td class="summary">25百分位</td>
           <td class="summary"></td>
-          <td class="summary">18</td>
+          <td class="summary">35</td>
+        </tr>
+        <tr>
+          <td class="x">陈琳</td>
+          <td>54</td>
+          <td>30</td>
+          <td class="x2">刘增艳</td>
+          <td>63</td>
+          <td>36</td>
+          <td class="summary">75百分位</td>
+          <td class="summary"></td>
+          <td class="summary">22</td>
+        </tr>
+        <tr>
+          <td class="n2">江真仪</td>
+          <td>55</td>
+          <td>29</td>
+          <td class="s2">袁雨桢</td>
+          <td>64</td>
+          <td>29</td>
         </tr>
       </table>
       <footer class="footnote">四选奔跑组包括49至64名的成员。</footer>
