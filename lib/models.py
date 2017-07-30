@@ -11,6 +11,8 @@ __all__ = [
     'SNH48',
     'TEAM_IDS',
     'TIERS',
+    'TIER_NAMES',
+    'TIER_MEMBERS',
     'TeamS2',
     'TeamN2',
     'TeamH2',
@@ -463,12 +465,10 @@ class _SNH48(object):
 
         self.tiers = {}
         for tier in TIERS:
-            # Assign the election_rank attribute to each Member.
             members = []
             for name, rank in TIER_MEMBERS[tier]:
                 member = self._name_obj_map[name]
                 members.append(member)
-                member.election_rank = rank
             self.tiers[tier] = Tier(tier, members)
 
         self._initialized = True

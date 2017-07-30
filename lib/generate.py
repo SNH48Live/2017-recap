@@ -138,6 +138,7 @@ def generate_ranking(collection, filename):
 # A hell lot of duplicate code from generate_ranking. I know.
 def generate_tier_stats(tier_num):
     tier = SNH48.tiers[tier_num]
+    election_ranks = dict(TIER_MEMBERS[tier_num])
     table_rows = []
     counts = {member: 0 for member in tier}
     for performance in SNH48.performances:
@@ -145,7 +146,7 @@ def generate_tier_stats(tier_num):
             if member in counts:
                 counts[member] += 1
     for member in tier:
-        table_rows.append((member, member.election_rank, counts[member]))
+        table_rows.append((member, election_ranks[member.name], counts[member]))
 
     counts_np = numpy.array([count for member, count in counts.items()])
     tier.mean = counts_np.mean()
