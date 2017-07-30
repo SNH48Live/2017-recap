@@ -10,7 +10,7 @@
       th, td { width: 80px; }
       td.category { width: 100px; }
       .header { background: #ddd; }
-      .snh48, .gen6, .gen7, .tier3-2, .tier4-2, .tier4-4 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      .snh48, .gen6, .gen7, .tier3-2, .tier4-2, .tier4-3, .tier4-4 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
       
       .s2, .gen1 { background: #a2d5ed; }
       
@@ -24,7 +24,7 @@
       .gen2, .tier4-1 { background: linear-gradient(to right, #a2d5ed, #be98c7); }
       .gen3 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d); }
       .tier3-1 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b); }
-      .tier3-3, .tier4-3 { background: linear-gradient(to right, #a2d5ed, #f8941d, #b1d61b, #03c070); }
+      .tier3-3 { background: linear-gradient(to right, #a2d5ed, #f8941d, #b1d61b, #03c070); }
       .gen5, .gen8 { background: linear-gradient(to right, #be98c7, #f8941d, #03c070); }
       .high { background: #ddffdd; }
       .low { background: #ffdddd; }
