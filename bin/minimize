@@ -9,6 +9,15 @@ mkdir -p $minsvg_dir
 
 for svg in $svg_dir/*.svg; do
     minsvg=$minsvg_dir/$svg:t:r.min.svg
+
+    # stat(1) from coreutils required
+    svg_mtime=$(stat -c %Y $svg)
+    minsvg_mtime=$(stat -c %Y $minsvg)
+    (( svg_mtime < minsvg_mtime )) && {
+        echo "$svg not modified" >&2
+        continue
+    }
+
     svgo $svg $minsvg
     echo $minsvg
 done
