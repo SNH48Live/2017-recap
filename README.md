@@ -27,7 +27,6 @@ Look into `bin`.
 
 # TODOs
 
-- Fill out tier members in `lib/models.py` after the 4th Election.
 - Populate `data/performances.raw.json` gradually and at the end of the year.
 - Grep for the string `TODO` in the code base.
 

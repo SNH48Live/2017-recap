@@ -14,9 +14,8 @@
       th, td { width: 80px; }
       td.category { width: 100px; }
       .header { background: #ddd; }
-      {# TODO: Customize background of tier4-1 to tier4-4 based on 4th Election results. -#}
       {# S N H X X2 -#}
-      .snh48, .gen6, .gen7, .tier3-2 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
+      .snh48, .gen6, .gen7, .tier3-2, .tier4-2, .tier4-4 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b, #03c070); }
       {# S #}
       .s2, .gen1 { background: #a2d5ed; }
       {# N #}
@@ -28,13 +27,13 @@
       {# X2 #}
       .x2 { background: #03c070; }
       {# S N -#}
-      .gen2 { background: linear-gradient(to right, #a2d5ed, #be98c7); }
+      .gen2, .tier4-1 { background: linear-gradient(to right, #a2d5ed, #be98c7); }
       {# S N H -#}
       .gen3 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d); }
       {# S N H X -#}
       .tier3-1 { background: linear-gradient(to right, #a2d5ed, #be98c7, #f8941d, #b1d61b); }
       {# S H X X2 -#}
-      .tier3-3 { background: linear-gradient(to right, #a2d5ed, #f8941d, #b1d61b, #03c070); }
+      .tier3-3, .tier4-3 { background: linear-gradient(to right, #a2d5ed, #f8941d, #b1d61b, #03c070); }
       {# N H X2 -#}
       .gen5, .gen8 { background: linear-gradient(to right, #be98c7, #f8941d, #03c070); }
       .high { background: #ddffdd; }
