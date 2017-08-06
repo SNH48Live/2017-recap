@@ -170,6 +170,7 @@ def generate_tier_stats(tier_num):
     render_args = dict(
         title=f'{YEAR}年度{tier}公演出勤统计表',
         entries=table_rows,
+        mean=tier.mean,
         columns=3,
         tier_description=tier_descriptions[tier_num],
     )

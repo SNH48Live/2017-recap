@@ -2,7 +2,7 @@
 {% set rows = (entries|length - 1) // columns + 1 -%}
 {% set column_iters = entries|splitlist(rows, columns) -%}
 {% set width = 243 * columns + 1 -%}
-{% set height = 25 * (rows + 1) + 62 -%}
+{% set height = 25 * (rows + 1) + 82 -%}
 <svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}">
   <foreignObject width="100%" height="100%">
     <style>
@@ -18,6 +18,8 @@
       .h2 { background: #f8941d; }
       .x { background: #b1d61b; }
       .x2 { background: #03c070; }
+      .high { background: #ddffdd; }
+      .low { background: #ffdddd; }
       .summary { font-weight: bold; background: #ddd; }
       .footnote { margin: 5px; font-size: 75%; text-align: justify; }
       .footnote:before { content: "* "; }
@@ -45,7 +47,7 @@
           {%- set member, election_rank, count = entry %}
           <td class="{{ member.affiliation.team_id }}">{{ member.name }}</td>
           <td>{{ election_rank }}</td>
-          <td>{{ count }}</td>
+          <td class="{% if count > mean %}high{% elif count < mean %}low{% endif %}">{{ count }}</td>
 
           {#- a summary entry #}
           {%- elif entry|length == 2 %}
@@ -60,7 +62,10 @@
         </tr>
         {%- endfor %}
       </table>
-      <footer class="footnote">{{ tier_description }}</footer>
+      <footer>
+        <p class="footnote">{{ tier_description }}</p>
+        <p class="footnote">数据格背景色为浅绿色代表高于该组平均值；反之，背景色为浅红色代表低于该组相应值。白色代表持平。</p>
+      </footer>
     </div>
   </foreignObject>
 </svg>
