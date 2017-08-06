@@ -2,13 +2,18 @@
 
 import argparse
 import base64
+import collections
 import os
 import re
 import tempfile
 import webbrowser
 
 import jinja2
+import matplotlib
+matplotlib.rcParams['font.family'] = 'Songti SC'
+import matplotlib.pyplot as plt
 import numpy
+from matplotlib.ticker import FixedFormatter, FixedLocator
 
 from models import *
 
@@ -95,7 +100,8 @@ def generate_performance_list():
 # collection should support members, __contains__, and __str__ (used in title);
 # e.g., SNH48, TeamS2, TeamN2, a MemberList with a custom __str__, etc.
 # stats attributes (mean, median, percentile25, percentile75) will be directly
-# set on collection.
+# set on collection, as well as the counts attribute which holds a sorted list
+# of (member, count).
 def generate_ranking(collection, filename):
     counts = {member: 0 for member in collection.members}
     for performance in SNH48.performances:
@@ -106,6 +112,7 @@ def generate_ranking(collection, filename):
     # Sort by counter first (decreasing), then member
     sortkey = lambda pair: (-pair[1], SNH48.index(pair[0]))
     counts = sorted(counts.items(), key=sortkey)
+    collection.counts = counts
     rank = 0
     accumulated = 0
     current_count = 32767
@@ -254,6 +261,52 @@ def generate_summary():
     render(SUMMARY_TEMPLATE, 'summary.svg', **render_args)
 
 
+def generate_scatter():
+    plt.figure(figsize=(8, 4))
+    plt.title('2017年度SNH48各队成员公演出勤场次散点图')
+
+    team_heights = [5, 4, 3, 2, 1]
+    team_colors = ['#a2d5ed', '#be98c7', '#f8941d', '#b1d61b', '#03c070']
+    dots_x = []
+    dots_y = []
+    dots_s = []  # areas
+    dots_c = []  # colors
+    base_area = numpy.pi * 4  # a circle of radius 2pt
+    for team_id, height, color in zip(TEAM_IDS, team_heights, team_colors):
+        team = SNH48.teams[team_id]
+        counts = [count for member, count in team.counts]
+        dedup = collections.Counter(counts)
+        for count, occurrences in dedup.items():
+            dots_x.append(count)
+            dots_y.append(height)
+            dots_s.append(base_area * occurrences)
+            dots_c.append(color)
+    plt.scatter(dots_x, dots_y, s=dots_s, c=dots_c, marker='o')
+
+    # Draw lines at mean values.
+    dots_x = []
+    dots_y = []
+    dots_s = []
+    dots_c = []
+    for team_id, height, color in zip(TEAM_IDS, team_heights, team_colors):
+        team = SNH48.teams[team_id]
+        dots_x.append(team.mean)
+        dots_y.append(height)
+        dots_s.append(500)
+        dots_c.append(color)
+    plt.scatter(dots_x, dots_y, s=dots_s, c=dots_c, marker='|', alpha=0.5)
+
+    plt.xlim(xmin=0)
+    plt.ylim((0, 6))
+    plt.gca().yaxis.set_major_locator(FixedLocator(team_heights))
+    # Roman numeral Ⅱ has ridiculous letter spacing when rendered in Songti SC.
+    team_names = ['SII', 'NII', 'HII', 'X ', 'XII']
+    plt.gca().yaxis.set_major_formatter(FixedFormatter(team_names))
+    plt.annotate('注：每行的竖线代表该队成员公演场次的平均值。', xy=(0, 0), xytext=(0, -0.8), fontsize='small')
+
+    plt.savefig(os.path.join(SVG_DIR, 'scatter.svg'), bbox_inches='tight')
+
+
 def generate_attendance_tables():
     for team_id in TEAM_IDS:
         team = SNH48.teams[team_id]
@@ -316,6 +369,7 @@ def main():
     for tier in TIERS:
         generate_tier_stats(tier)
     generate_summary()
+    generate_scatter()
     generate_attendance_tables()
 
     if args.png:
