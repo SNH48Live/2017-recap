@@ -3,7 +3,7 @@
 [![code license: MIT](https://img.shields.io/badge/code%20license-MIT-blue.svg?maxAge=2592000)](COPYING)
 [![assets license: CC0](https://img.shields.io/badge/assets%20license-CC0-blue.svg?maxAge=2592000)](COPYING)
 
-Current summary (not up-to-date; also stats for 4th Election tiers are apparently nonsense at this moment):
+Current summary (not always up-to-date):
 
 ![](https://rawgit.com/SNH48Live/2017-recap/master/images/svg/summary.svg)
 
