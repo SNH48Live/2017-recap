@@ -332,6 +332,29 @@ def generate_attendance_tables():
         filename = f'{team_id}-joint.svg'
         render(ATTENDANCE_TEMPLATE, filename, **render_args)
 
+        # Calculate members of max attendance
+        total = len(team.performances)
+        counts = []
+        for member in team.members:
+            count = 0
+            for performance in team.performances:
+                if member in performance:
+                    count += 1
+            counts.append((member, count))
+        counts.sort(key=lambda t: -t[1])
+        max_count = counts[0][1]
+        max_members = []
+        for member, count in counts:
+            if count != max_count:
+                break
+            max_members.append(member)
+        print(f'{team} 最高出勤', end='')
+        if max_count == total:
+            print('（全勤）：', end='')
+        else:
+            print(f'（差{total - max_count}场）：', end='')
+        print('、'.join(member.name for member in max_members))
+
     rush_performances = []
     rush_performers = MemberList()
     for performance in SNH48.joint_performances:
