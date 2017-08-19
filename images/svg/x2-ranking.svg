@@ -37,13 +37,13 @@
           <td class="name x2">蒋舒婷</td>
           <td>33</td>
           <td>9</td>
-          <td class="name x2">陶波尔</td>
+          <td class="name x2">费沁源</td>
           <td>20</td>
-          <td>16</td>
+          <td>17</td>
         </tr>
         <tr>
           <td class="name x2">李佳恩</td>
-          <td>44</td>
+          <td>45</td>
           <td>2</td>
           <td class="name x2">严佼君</td>
           <td>33</td>
@@ -54,14 +54,14 @@
         </tr>
         <tr>
           <td class="name x2">曾晓雯</td>
-          <td>42</td>
+          <td>43</td>
           <td>3</td>
           <td class="name x2">洪珮雲</td>
           <td>31</td>
           <td>11</td>
           <td class="name x2">林歆源</td>
-          <td>11</td>
-          <td>19</td>
+          <td>12</td>
+          <td>18</td>
         </tr>
         <tr>
           <td class="name x2">刘增艳</td>
@@ -82,7 +82,7 @@
           <td>28</td>
           <td>13</td>
           <td class="name summary">平均</td>
-          <td class="summary">29.4</td>
+          <td class="summary">29.6</td>
           <td class="summary"></td>
         </tr>
         <tr>
@@ -100,7 +100,7 @@
           <td class="name x2">吕梦莹</td>
           <td>34</td>
           <td>7</td>
-          <td class="name x2">邹佳佳</td>
+          <td class="name x2">陶波尔</td>
           <td>21</td>
           <td>15</td>
           <td class="name summary">25百分位</td>
@@ -111,11 +111,11 @@
           <td class="name x2">张文静</td>
           <td>34</td>
           <td>7</td>
-          <td class="name x2">费沁源</td>
-          <td>20</td>
-          <td>16</td>
+          <td class="name x2">邹佳佳</td>
+          <td>21</td>
+          <td>15</td>
           <td class="name summary">75百分位</td>
-          <td class="summary">20.8</td>
+          <td class="summary">21</td>
           <td class="summary"></td>
         </tr>
       </table>
