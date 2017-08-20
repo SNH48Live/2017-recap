@@ -36,13 +36,13 @@
         <tr>
           <td class="h2">袁航</td>
           <td>33</td>
-          <td class="low">23</td>
+          <td class="low">24</td>
           <td class="x">汪束</td>
           <td>41</td>
           <td class="low">26</td>
           <td class="h2">杨惠婷</td>
           <td>48</td>
-          <td class="high">36</td>
+          <td class="high">37</td>
         </tr>
         <tr>
           <td class="s2">吕一</td>
@@ -53,7 +53,7 @@
           <td class="high">34</td>
           <td class="summary">平均</td>
           <td class="summary"></td>
-          <td class="summary">33.1</td>
+          <td class="summary">33.3</td>
         </tr>
         <tr>
           <td class="x">李钊</td>
@@ -75,7 +75,7 @@
           <td class="low">33</td>
           <td class="summary">25百分位</td>
           <td class="summary"></td>
-          <td class="summary">36.5</td>
+          <td class="summary">37</td>
         </tr>
         <tr>
           <td class="x2">费沁源</td>
@@ -86,7 +86,7 @@
           <td class="high">62</td>
           <td class="summary">75百分位</td>
           <td class="summary"></td>
-          <td class="summary">24.5</td>
+          <td class="summary">25</td>
         </tr>
       </table>
       <footer>
