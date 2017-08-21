@@ -4,6 +4,8 @@ import itertools
 import json
 import os
 
+import yaml
+
 
 __all__ = [
     'GENERATION_NAMES',
@@ -23,7 +25,7 @@ __all__ = [
 HERE = os.path.dirname(os.path.realpath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA_DIR = os.path.join(ROOT, 'data')
-MEMBERS_JSON = os.path.join(DATA_DIR, 'members.json')
+MEMBERS_YML = os.path.join(DATA_DIR, 'members.yml')
 PERFORMANCES_JSON = os.path.join(DATA_DIR, 'performances.json')
 
 TEAM_IDS = ['s2', 'n2', 'h2', 'x', 'x2']
@@ -437,8 +439,8 @@ class _SNH48(object):
         self._members = []
         self._name_obj_map = {}
         self._name_index_map = {}
-        with open(MEMBERS_JSON) as fp:
-            members = json.load(fp)
+        with open(MEMBERS_YML) as fp:
+            members = yaml.load(fp)
             for index, member in enumerate(members):
                 name = member['name']
                 affiliation = member['affiliation']
