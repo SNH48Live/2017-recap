@@ -39,7 +39,7 @@
           <td class="low">24</td>
           <td class="x">汪束</td>
           <td>41</td>
-          <td class="low">26</td>
+          <td class="low">27</td>
           <td class="h2">杨惠婷</td>
           <td>48</td>
           <td class="high">37</td>
@@ -53,12 +53,12 @@
           <td class="high">34</td>
           <td class="summary">平均</td>
           <td class="summary"></td>
-          <td class="summary">33.3</td>
+          <td class="summary">33.5</td>
         </tr>
         <tr>
           <td class="x">李钊</td>
           <td>38</td>
-          <td class="low">27</td>
+          <td class="low">28</td>
           <td class="x">王晓佳</td>
           <td>43</td>
           <td class="high">37</td>
@@ -83,10 +83,10 @@
           <td class="low">20</td>
           <td class="x">冯晓菲</td>
           <td>47</td>
-          <td class="high">62</td>
+          <td class="high">63</td>
           <td class="summary">75百分位</td>
           <td class="summary"></td>
-          <td class="summary">25</td>
+          <td class="summary">25.5</td>
         </tr>
       </table>
       <footer>
