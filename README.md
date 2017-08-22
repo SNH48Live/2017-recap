@@ -1,7 +1,7 @@
 # 2017 recap — SNH48 stage performance stats (work in progress)
 
 [![code license: MIT](https://img.shields.io/badge/code%20license-MIT-blue.svg?maxAge=2592000)](COPYING)
-[![assets license: CC0](https://img.shields.io/badge/assets%20license-CC0-blue.svg?maxAge=2592000)](COPYING)
+[![assets license: CC BY 4.0](https://img.shields.io/badge/assets%20license-CC%20BY%204.0-blue.svg?maxAge=2592000)](COPYING)
 
 Current summary (not always up-to-date):
 
@@ -33,6 +33,6 @@ Look into `bin`.
 # License
 
 - Code (files outside `images`) are licensed under MIT;
-- Assets (files inside `images`) are licensed under CC0.
+- Assets (files inside `images`) are licensed under CC BY 4.0.
 
 See [`COPYING`](COPYING) for details.
