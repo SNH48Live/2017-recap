@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const puppeteer = require('puppeteer');
+const sizeOf = require('image-size');
+
+const ROOT = path.dirname(__dirname);
+const PNG_DIR = path.join(ROOT, 'images/png');
+
+const svgPaths = process.argv.slice(2);
+
+(async () => {
+  const browser = await puppeteer.launch();
+
+  for (const svgPath of svgPaths) {
+    const dimensions = sizeOf(svgPath);
+    const fileUrl = `file://${path.resolve(svgPath)}`;
+    const basename = path.basename(svgPath, '.svg');
+    const pngPath = path.join(PNG_DIR, `${basename}@2x.png`);
+    console.log(pngPath);
+
+    const page = await browser.newPage();
+    await page.setViewport({
+      width: dimensions.width,
+      height: dimensions.height,
+      deviceScaleFactor: 2,
+      isMobile: false,
+      hasTouch: false,
+      isLandscape: true
+    });
+    await page.goto(fileUrl);
+    await page.screenshot({path: pngPath, fullPage: true});
+
+    page.close().catch(() => {});
+  }
+
+  browser.close();
+})();

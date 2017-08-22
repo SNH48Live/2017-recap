@@ -6,6 +6,7 @@ import collections
 import io
 import os
 import re
+import subprocess
 import tempfile
 import textwrap
 import webbrowser
@@ -27,6 +28,7 @@ from models import *
 HERE = os.path.dirname(os.path.realpath(__file__))
 ROOT = os.path.dirname(HERE)
 TEMPLATES_DIR = os.path.join(ROOT, 'templates')
+CONVERTER = os.path.join(ROOT, 'bin/svg2png')
 JINJA = jinja2.Environment(
     loader=jinja2.FileSystemLoader(TEMPLATES_DIR),
 )
@@ -37,7 +39,6 @@ JINJA.filters['next'] = lambda iterator: next(iterator, None)
 JINJA.filters['splitlist'] = lambda l, chunksize, nchunks: [iter(l[i*chunksize:(i+1)*chunksize]) for i in range(nchunks)]
 ATTENDANCE_TEMPLATE = JINJA.get_template('attendance.svg')
 BREAKDOWN_TEMPLATE = JINJA.get_template('breakdown.svg')
-CONVERTER_TEMPLATE = JINJA.get_template('converter.html')
 PERFORMANCES_TEMPLATE = JINJA.get_template('performances.svg')
 RANKING_TEMPLATE = JINJA.get_template('ranking.svg')
 TIER_STATS_TEMPLATE = JINJA.get_template('tier-stats.svg')
@@ -58,39 +59,10 @@ TEAM_COLORS = [
 YEAR = 2017
 
 
-def extract_svg_dimensions(svg):
-    data = {}
-    for dim in ('width', 'height'):
-        m = re.search(rf'<svg [^>]*{dim}="(?P<{dim}>\d+(px|pt)?)"[^>]*>', svg)
-        value = m.group(dim)
-        if 'px' in value:
-            value = int(value[:-2])
-        elif 'pt' in value:
-            value = round(int(value[:-2]) / 0.75)
-        else:
-            value = int(value)
-        data[dim] = value
-    return data['width'], data['height']
-
-
 def convert_svg_to_png():
-    scale = 4
-    items = []
-    for filename in convert_svg_to_png.queue:
-        with open(os.path.join(SVG_DIR, filename)) as fp:
-            svg = fp.read()
-        width, height = extract_svg_dimensions(svg)
-        png_filename = filename[:-4] + f'@{scale}x.png'
-        items.append((svg, width, height, png_filename))
-
-    fd, path = tempfile.mkstemp(suffix='.html')
-    os.close(fd)
-    with open(path, 'w') as fp:
-        fp.write(CONVERTER_TEMPLATE.render(scale_factor=scale, items=items))
-    print(path)
-    # webbrowser.open(path)
-
+    cmd = [CONVERTER] + [os.path.join(SVG_DIR, filename) for filename in convert_svg_to_png.queue]
     convert_svg_to_png.queue.clear()
+    subprocess.run(cmd)
 
 convert_svg_to_png.queue = []
 
