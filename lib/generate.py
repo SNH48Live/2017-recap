@@ -58,16 +58,28 @@ TEAM_COLORS = [
 YEAR = 2017
 
 
+def extract_svg_dimensions(svg):
+    data = {}
+    for dim in ('width', 'height'):
+        m = re.search(rf'<svg [^>]*{dim}="(?P<{dim}>\d+(px|pt)?)"[^>]*>', svg)
+        value = m.group(dim)
+        if 'px' in value:
+            value = int(value[:-2])
+        elif 'pt' in value:
+            value = round(int(value[:-2]) / 0.75)
+        else:
+            value = int(value)
+        data[dim] = value
+    return data['width'], data['height']
+
+
 def convert_svg_to_png():
     scale = 4
     items = []
     for filename in convert_svg_to_png.queue:
         with open(os.path.join(SVG_DIR, filename)) as fp:
             svg = fp.read()
-        m = re.match(r'^<svg .* width="(?P<width>\d+)" height="(?P<height>\d+)">', svg)
-        assert m
-        width = int(m.group('width'))
-        height = int(m.group('height'))
+        width, height = extract_svg_dimensions(svg)
         png_filename = filename[:-4] + f'@{scale}x.png'
         items.append((svg, width, height, png_filename))
 
@@ -75,7 +87,8 @@ def convert_svg_to_png():
     os.close(fd)
     with open(path, 'w') as fp:
         fp.write(CONVERTER_TEMPLATE.render(scale_factor=scale, items=items))
-    webbrowser.open(path)
+    print(path)
+    # webbrowser.open(path)
 
     convert_svg_to_png.queue.clear()
 
