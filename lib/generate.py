@@ -3,6 +3,7 @@
 import argparse
 import base64
 import collections
+import io
 import os
 import re
 import tempfile
@@ -10,7 +11,11 @@ import webbrowser
 
 import jinja2
 import matplotlib
-matplotlib.rcParams['font.family'] = 'Songti SC'
+matplotlib.rcParams.update({
+    'backend': 'svg',
+    'font.family': 'Songti SC',
+    'svg.hashsalt': '',
+})
 import matplotlib.pyplot as plt
 import numpy
 from matplotlib.ticker import FixedFormatter, FixedLocator
@@ -79,14 +84,34 @@ def render(template, filename, **render_args):
     if os.path.exists(path):
         with open(path, 'r') as fp:
             existing_content = fp.read()
-        if content != existing_content:
-            with open(path, 'w') as fp:
-                fp.write(content)
-            print(path)
+    else:
+        existing_content = None
+    if content != existing_content:
+        with open(path, 'w') as fp:
+            fp.write(content)
+        print(path)
     if render.generate_png:
         queue_svg_for_conversion(filename)
 
 render.generate_png = False
+
+def plt_render(filename):
+    path = os.path.join(SVG_DIR, filename)
+    buf = io.BytesIO()
+    plt.savefig(buf, bbox_inches='tight', format='svg')
+    content = buf.getvalue()
+    if os.path.exists(path):
+        with open(path, 'rb') as fp:
+            existing_content = fp.read()
+    else:
+        existing_content = None
+    if content != existing_content:
+        with open(path, 'wb') as fp:
+            fp.write(content)
+        print(path)
+    buf.close()
+    if render.generate_png:
+        queue_svg_for_conversion(filename)
 
 def generate_performance_list():
     render_args = dict(
@@ -302,9 +327,9 @@ def generate_scatter():
     # Roman numeral Ⅱ has ridiculous letter spacing when rendered in Songti SC.
     team_names = ['SII', 'NII', 'HII', 'X ', 'XII']
     plt.gca().yaxis.set_major_formatter(FixedFormatter(team_names))
-    plt.annotate('注：每行的竖线代表该队成员公演场次的平均值。', xy=(0, 0), xytext=(0, -0.8), fontsize='small')
+    plt.text(0, -0.8, '注：每行的竖线代表该队成员公演场次的平均值。', fontsize='small')
 
-    plt.savefig(os.path.join(SVG_DIR, 'scatter.svg'), bbox_inches='tight')
+    plt_render('scatter.svg')
 
 
 def generate_attendance_tables():
