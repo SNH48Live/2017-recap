@@ -2,6 +2,7 @@
 
 [![code license: MIT](https://img.shields.io/badge/code%20license-MIT-blue.svg?maxAge=2592000)](COPYING)
 [![assets license: CC BY 4.0](https://img.shields.io/badge/assets%20license-CC%20BY%204.0-blue.svg?maxAge=2592000)](COPYING)
+[![Dependency Status](https://gemnasium.com/badges/github.com/SNH48Live/2017-recap.svg)](https://gemnasium.com/github.com/SNH48Live/2017-recap)
 
 Current summary (not always up-to-date):
 
