@@ -416,7 +416,7 @@ def generate_summary():
     render(SUMMARY_TEMPLATE, 'summary.svg', **render_args)
 
 
-def generate_scatter():
+def generate_team_scatter():
     plt.figure(figsize=(8, 4))
     plt.title('2017年度SNH48各队成员公演出勤场次散点图')
 
@@ -459,7 +459,7 @@ def generate_scatter():
     plt.gca().yaxis.set_major_formatter(FixedFormatter(team_names))
     plt.text(0, -0.8, '注：每行的竖线代表该队成员公演场次的平均值。', fontsize='small')
 
-    plt_render('scatter.svg')
+    plt_render('team-scatter.svg')
 
 
 def generate_attendance_tables():
@@ -547,7 +547,7 @@ def main():
     for tier in TIERS:
         generate_tier_stats(tier)
     generate_summary()
-    generate_scatter()
+    generate_team_scatter()
     generate_attendance_tables()
     generate_election_scatters()
 
