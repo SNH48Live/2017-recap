@@ -7,6 +7,7 @@ import io
 import os
 import re
 import tempfile
+import textwrap
 import webbrowser
 
 import jinja2
@@ -18,7 +19,7 @@ matplotlib.rcParams.update({
 })
 import matplotlib.pyplot as plt
 import numpy
-from matplotlib.ticker import FixedFormatter, FixedLocator
+from matplotlib.ticker import FixedFormatter, FixedLocator, MultipleLocator
 
 from models import *
 
@@ -45,6 +46,14 @@ SUMMARY_TEMPLATE = JINJA.get_template('summary.svg')
 IMAGES_DIR = os.path.join(ROOT, 'images')
 SVG_DIR = os.path.join(IMAGES_DIR, 'svg')
 os.makedirs(SVG_DIR, exist_ok=True)
+
+TEAM_COLORS = [
+    (TeamS2, '#a2d5ed'),
+    (TeamN2, '#be98c7'),
+    (TeamH2, '#f8941d'),
+    (TeamX, '#b1d61b'),
+    (TeamX2, '#03c070'),
+]
 
 YEAR = 2017
 
@@ -167,6 +176,12 @@ def generate_ranking(collection, filename):
     render(RANKING_TEMPLATE, filename, **render_args)
 
 
+# Stats with respect to election rankings and tiers were an
+# afterthought, hence the treatment here is particularly messy.
+
+# Sets the attribute individual_stats on the corresponding Tier object
+# which is a list of triples (member, election_rank, count).
+#
 # A hell lot of duplicate code from generate_ranking. I know.
 def generate_tier_stats(tier_num):
     tier = SNH48.tiers[tier_num]
@@ -177,8 +192,12 @@ def generate_tier_stats(tier_num):
         for member in performance.performers:
             if member in counts:
                 counts[member] += 1
+
+    tier.individual_stats = []
     for member in tier:
-        table_rows.append((member, election_ranks[member.name], counts[member]))
+        tier.individual_stats.append((member, election_ranks[member.name], counts[member]))
+
+    table_rows = tier.individual_stats.copy()
 
     counts_np = numpy.array([count for member, count in counts.items()])
     tier.mean = counts_np.mean()
@@ -207,6 +226,117 @@ def generate_tier_stats(tier_num):
         tier_description=tier_descriptions[tier_num],
     )
     render(TIER_STATS_TEMPLATE, f'tier{tier_num}-stats.svg', **render_args)
+
+
+E3_RANKS = {SNH48.get(name): rank for name, rank in
+            TIER_MEMBERS['3-1'] + TIER_MEMBERS['3-2'] + TIER_MEMBERS['3-3']}
+E4_RANKS = {SNH48.get(name): rank for name, rank in
+            TIER_MEMBERS['4-1'] + TIER_MEMBERS['4-2'] + TIER_MEMBERS['4-3'] + TIER_MEMBERS['4-4']}
+POSITIVE_INF = float('inf')
+NEGATIVE_INF = float('-inf')
+
+
+# Calculates the shift in rank from 3rd Election to 4th Election of a
+# given member. Positive means better rank.
+#
+# The returned value is inf if a member wasn't ranked in the 3rd
+# Election but got in during the 4th. -inf is returned vice versa. nan
+# is returned if the member is unranked in both.
+def election_rank_shift(member):
+    e3_rank = E3_RANKS.get(member, POSITIVE_INF)
+    e4_rank = E4_RANKS.get(member, POSITIVE_INF)
+    return e3_rank - e4_rank
+
+
+def generate_election_scatter(elected_total, individuals, filename, title):
+    # We want to scale the axes box proportional to data limits. 0.1 inch for
+    # each unit on the x-axis and y-axis.
+    #
+    # We abuse the fact that Axes.set_position[1] sets width and height of the
+    # axes rectangle in relative [0, 1] coordinates, and accepts lengths
+    # greater than 1 in which case the length is scaled accordingly. We also
+    # abuse the fact that bbox_inches='tight' bounds all artists regardless of
+    # initial canvas size.
+    #
+    # [1] http://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_position.html
+    plt.figure(figsize=(0.1, 0.1))
+
+    team_colors = dict(TEAM_COLORS)
+    dots_x = []
+    dots_y = []
+    dots_c = []
+    circles_x = []
+    circles_y = []
+    circles_edgecolors = []
+    base_area = numpy.pi * 6.25  # a circle of radius 2.5pt
+    gray = '#444444'
+    lightred = '#ffaaaa'
+    lightgreen = '#88ff88'
+
+    for member, rank, count in individuals:
+        dots_x.append(rank)
+        dots_y.append(count)
+        dots_c.append(team_colors[member.affiliation])
+
+        plt.text(rank + 0.3, count - 0.4, member.name[0], size='small', color=gray)
+
+        rank_shift = election_rank_shift(member)
+        if abs(rank_shift) < POSITIVE_INF:
+            if rank_shift == 0:
+                continue
+            else:
+                arrow_color = lightgreen if rank_shift > 0 else lightred
+                plt.arrow(rank, count, 0, rank_shift / 3,
+                          color=arrow_color, width=0.02, head_width=0.2, zorder=-1)
+        else:
+            # inf or -inf
+            circles_x.append(rank)
+            circles_y.append(count)
+            circles_edgecolors.append(lightgreen if rank_shift > 0 else lightred)
+
+    plt.scatter(dots_x, dots_y, s=base_area, c=dots_c, marker='o')
+    plt.scatter(circles_x, circles_y, s=base_area * 9, c='none', edgecolors=circles_edgecolors,
+                marker='o', zorder=-1)
+
+    axes = plt.gca()
+    xmin = 0
+    xmax = max(dots_x) + 2
+    ymin = 0
+    ymax = max(dots_y) + 5
+    axes.set_xlim((xmin, xmax))
+    axes.set_ylim((ymin, ymax))
+    axes.set_position([0, 0, xmax - xmin, ymax - ymin])
+    from matplotlib.ticker import MultipleLocator
+    axes.xaxis.set_major_locator(FixedLocator(range(1, elected_total + 1, 8)))
+    axes.xaxis.set_minor_locator(MultipleLocator(base=1))
+    axes.yaxis.set_major_locator(MultipleLocator(base=5))
+    axes.yaxis.set_minor_locator(MultipleLocator(base=1))
+
+    plt.title(title)
+    plt.xlabel('总选排名')
+    plt.ylabel('公演场次')
+    annotation = textwrap.dedent('''\
+    * 仅统计入圈成员。
+    * 绿色（红色）箭头代表三选至四选排名上升（下降）；箭头长度反映上升（下降）幅度。
+    * 绿圈代表三选未入圈而四选得入；反之，红圈代表三选入圈而四选圈外。
+    ''')
+    plt.text(0, -10, annotation, fontsize='small')
+
+    plt_render(filename)
+
+
+def generate_election_scatters():
+    e3_individuals = []
+    for tier_num in ('3-1', '3-2', '3-3'):
+        e3_individuals += SNH48.tiers[tier_num].individual_stats
+    e4_individuals = []
+    for tier_num in ('4-1', '4-2', '4-3', '4-4'):
+        e4_individuals += SNH48.tiers[tier_num].individual_stats
+
+    generate_election_scatter(48, e3_individuals, 'election3-scatter.svg',
+                              'SNH48成员2017年度公演出勤场次、三选排名对比图')
+    generate_election_scatter(66, e4_individuals, 'election4-scatter.svg',
+                              'SNH48成员2017年度公演出勤场次、四选排名对比图')
 
 
 def generate_breakdown():
@@ -291,7 +421,7 @@ def generate_scatter():
     plt.title('2017年度SNH48各队成员公演出勤场次散点图')
 
     team_heights = [5, 4, 3, 2, 1]
-    team_colors = ['#a2d5ed', '#be98c7', '#f8941d', '#b1d61b', '#03c070']
+    team_colors = [color for _, color in TEAM_COLORS]
     dots_x = []
     dots_y = []
     dots_s = []  # areas
@@ -419,6 +549,7 @@ def main():
     generate_summary()
     generate_scatter()
     generate_attendance_tables()
+    generate_election_scatters()
 
     if args.png:
         convert_svg_to_png()
