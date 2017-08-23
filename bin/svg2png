@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const { exec } = require('child_process');
 const path = require('path');
 const puppeteer = require('puppeteer');
 const sizeOf = require('image-size');
@@ -30,6 +31,7 @@ const svgPaths = process.argv.slice(2);
     });
     await page.goto(fileUrl);
     await page.screenshot({path: pngPath, fullPage: true});
+    exec(`optipng ${pngPath}`);  // Assume pngPath is safe for shell
 
     page.close().catch(() => {});
   }
