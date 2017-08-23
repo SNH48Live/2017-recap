@@ -1,0 +1,51 @@
+#!/usr/bin/env node
+
+// Helper script for inspecting generated @2x PNG files at their intended
+// resolutions.
+
+const fs = require('fs');
+var open = require("open");
+const path = require('path');
+const pug = require('pug');
+const sizeOf = require('image-size');
+
+const ROOT = path.dirname(__dirname);
+const PNG_DIR = path.join(ROOT, 'images/png');
+
+const TEMPLATE = `
+doctype html
+html
+head
+  style.
+    p, img { display: block; }
+    p { margin: 1em auto; text-align: center; font-weight: bold; }
+    img { margin: 1em auto 3em auto; }
+body
+  each image in images
+    p= image.filename
+    img(src=image.url, width=image.width, height=image.height)
+`;
+
+const html = pug.render(TEMPLATE, {
+  images: fs.readdirSync(PNG_DIR)
+    .filter((filename) => filename.endsWith('@2x.png'))
+    .map((filename) => {
+      const file = path.resolve(PNG_DIR, filename);
+      const url = `file://${file}`;
+      const dimensions = sizeOf(file);
+      return {
+        filename: filename,
+        url: url,
+        width: dimensions.width / 2,
+        height: dimensions.height / 2
+      };
+    })
+});
+
+const tempdir = fs.mkdtempSync('/tmp/recap-view-pngs-');
+const tempfile = path.join(tempdir, 'index.html');
+fs.writeFile(tempfile, html, (err) => {
+  if (err) throw err;
+  console.log(tempfile);
+  open(`file://${tempfile}`);
+});
