@@ -6,7 +6,9 @@
 
 Current summary (not always up-to-date):
 
+![](https://rawgit.com/SNH48Live/2017-recap/master/images/svg/breakdown.svg)
 ![](https://rawgit.com/SNH48Live/2017-recap/master/images/svg/summary.svg)
+![](https://rawgit.com/SNH48Live/2017-recap/master/images/svg/team-scatter.svg)
 
 A full demo from the master branch can be found at <https://snh48live.org/2017-recap>.
 
