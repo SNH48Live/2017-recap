@@ -85,6 +85,9 @@
 - name: 冯薪朵
   affiliation: n2
   generation: 2
+- name: 葛佳慧
+  affiliation: n2
+  generation: 8
 - name: 龚诗淇
   affiliation: n2
   generation: 2
@@ -159,6 +162,9 @@
 - name: 郝婉晴
   affiliation: h2
   generation: 3
+- name: 姜涵
+  affiliation: h2
+  generation: 8
 - name: 李清扬
   affiliation: h2
   generation: 3
@@ -183,6 +189,9 @@
 - name: 王露皎
   affiliation: h2
   generation: 5
+- name: 王奕
+  affiliation: h2
+  generation: 8
 - name: 文文
   affiliation: h2
   generation: 8
@@ -192,6 +201,9 @@
 - name: 谢妮
   affiliation: h2
   generation: 3
+- name: 熊沁娴
+  affiliation: h2
+  generation: 8
 - name: 徐晗
   affiliation: h2
   generation: 3
@@ -245,6 +257,9 @@
 - name: 孙歆文
   affiliation: x
   generation: 4
+- name: 孙亚萍
+  affiliation: x
+  generation: 8
 - name: 汪佳翎
   affiliation: x
   generation: 4
@@ -283,6 +298,9 @@
 - name: 费沁源
   affiliation: x2
   generation: 5
+- name: 贺苏堃
+  affiliation: x2
+  generation: 8
 - name: 洪珮雲
   affiliation: x2
   generation: 5
@@ -311,6 +329,9 @@
   affiliation: x2
   generation: 5
 - name: 陶波尔
+  affiliation: x2
+  generation: 8
+- name: 许嘉怡
   affiliation: x2
   generation: 8
 - name: 徐诗琪
