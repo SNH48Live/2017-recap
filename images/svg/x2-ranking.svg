@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="490" height="262">
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="287">
   <foreignObject width="100%" height="100%">
     <style>
       div { background: #fff; font: 16px "Times New Roman", Times, "Songti SC", SimSun, serif; }
@@ -32,42 +32,20 @@
         </tr>
         <tr>
           <td class="name x2">李佳恩</td>
-          <td>54</td>
+          <td>56</td>
           <td>1</td>
-          <td class="name x2">严佼君</td>
+          <td class="name x2">蒋舒婷</td>
           <td>37</td>
-          <td>9</td>
-          <td class="name x2">邹佳佳</td>
-          <td>21</td>
-          <td>16</td>
+          <td>10</td>
+          <td class="name x2">陈韫凌</td>
+          <td>15</td>
+          <td>19</td>
         </tr>
         <tr>
           <td class="name x2">潘瑛琪</td>
-          <td>52</td>
+          <td>53</td>
           <td>2</td>
-          <td class="name x2">蒋舒婷</td>
-          <td>36</td>
-          <td>10</td>
-          <td class="name x2">林歆源</td>
-          <td>19</td>
-          <td>18</td>
-        </tr>
-        <tr>
-          <td class="name x2">曾晓雯</td>
-          <td>50</td>
-          <td>3</td>
           <td class="name x2">洪珮雲</td>
-          <td>31</td>
-          <td>11</td>
-          <td class="name x2">陈韫凌</td>
-          <td>14</td>
-          <td>19</td>
-        </tr>
-        <tr>
-          <td class="name x2">刘增艳</td>
-          <td>43</td>
-          <td>4</td>
-          <td class="name x2">姜杉</td>
           <td>31</td>
           <td>11</td>
           <td class="name x2">陈音</td>
@@ -75,48 +53,78 @@
           <td>20</td>
         </tr>
         <tr>
+          <td class="name x2">曾晓雯</td>
+          <td>51</td>
+          <td>3</td>
+          <td class="name x2">姜杉</td>
+          <td>31</td>
+          <td>11</td>
+          <td class="name x2">贺苏堃</td>
+          <td>1</td>
+          <td>21</td>
+        </tr>
+        <tr>
           <td class="name x2">张怡</td>
-          <td>43</td>
+          <td>44</td>
           <td>4</td>
           <td class="name x2">宋雨珊</td>
           <td>30</td>
           <td>13</td>
+          <td class="name x2">许嘉怡</td>
+          <td>1</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td class="name x2">刘增艳</td>
+          <td>43</td>
+          <td>5</td>
+          <td class="name x2">陶波尔</td>
+          <td>29</td>
+          <td>14</td>
           <td class="name summary">平均</td>
-          <td class="summary">33.4</td>
+          <td class="summary">31.1</td>
           <td class="summary"></td>
         </tr>
         <tr>
           <td class="name x2">徐诗琪</td>
-          <td>42</td>
-          <td>6</td>
-          <td class="name x2">陶波尔</td>
+          <td>43</td>
+          <td>5</td>
+          <td class="name x2">於佳怡</td>
           <td>28</td>
-          <td>14</td>
+          <td>15</td>
           <td class="name summary">中位</td>
-          <td class="summary">33.5</td>
+          <td class="summary">31</td>
           <td class="summary"></td>
         </tr>
         <tr>
           <td class="name x2">吕梦莹</td>
-          <td>39</td>
+          <td>40</td>
           <td>7</td>
-          <td class="name x2">於佳怡</td>
-          <td>27</td>
-          <td>15</td>
+          <td class="name x2">费沁源</td>
+          <td>22</td>
+          <td>16</td>
           <td class="name summary">25百分位</td>
           <td class="summary">42.2</td>
+          <td class="summary"></td>
+        </tr>
+        <tr>
+          <td class="name x2">严佼君</td>
+          <td>38</td>
+          <td>8</td>
+          <td class="name x2">邹佳佳</td>
+          <td>21</td>
+          <td>17</td>
+          <td class="name summary">75百分位</td>
+          <td class="summary">21.2</td>
           <td class="summary"></td>
         </tr>
         <tr>
           <td class="name x2">张文静</td>
           <td>38</td>
           <td>8</td>
-          <td class="name x2">费沁源</td>
-          <td>21</td>
-          <td>16</td>
-          <td class="name summary">75百分位</td>
-          <td class="summary">25.5</td>
-          <td class="summary"></td>
+          <td class="name x2">林歆源</td>
+          <td>20</td>
+          <td>18</td>
         </tr>
       </table>
     </div>
