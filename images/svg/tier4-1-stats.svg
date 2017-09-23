@@ -39,10 +39,10 @@
           <td class="low">0</td>
           <td class="s2">莫寒</td>
           <td>8</td>
-          <td class="high">29</td>
+          <td class="high">30</td>
           <td class="s2">李宇琪</td>
           <td>16</td>
-          <td class="high">32</td>
+          <td class="high">33</td>
         </tr>
         <tr>
           <td class="n2">李艺彤</td>
@@ -50,10 +50,10 @@
           <td class="low">21</td>
           <td class="s2">张语格</td>
           <td>9</td>
-          <td class="low">18</td>
+          <td class="low">19</td>
           <td class="summary">平均</td>
           <td class="summary"></td>
-          <td class="summary">21.7</td>
+          <td class="summary">22.1</td>
         </tr>
         <tr>
           <td class="n2">黄婷婷</td>
@@ -61,7 +61,7 @@
           <td class="low">12</td>
           <td class="s2">许佳琪</td>
           <td>10</td>
-          <td class="high">22</td>
+          <td class="low">22</td>
           <td class="summary">中位</td>
           <td class="summary"></td>
           <td class="summary">22</td>
@@ -72,10 +72,10 @@
           <td class="low">18</td>
           <td class="s2">戴萌</td>
           <td>11</td>
-          <td class="high">30</td>
+          <td class="high">31</td>
           <td class="summary">25百分位</td>
           <td class="summary"></td>
-          <td class="summary">29</td>
+          <td class="summary">30</td>
         </tr>
         <tr>
           <td class="n2">陆婷</td>
@@ -83,10 +83,10 @@
           <td class="high">23</td>
           <td class="s2">孔肖吟</td>
           <td>12</td>
-          <td class="high">29</td>
+          <td class="high">30</td>
           <td class="summary">75百分位</td>
           <td class="summary"></td>
-          <td class="summary">18</td>
+          <td class="summary">18.5</td>
         </tr>
         <tr>
           <td class="n2">曾艳芬</td>
@@ -102,7 +102,7 @@
           <td class="low">17</td>
           <td class="s2">吴哲晗</td>
           <td>15</td>
-          <td class="high">29</td>
+          <td class="high">30</td>
         </tr>
       </table>
       <footer>
