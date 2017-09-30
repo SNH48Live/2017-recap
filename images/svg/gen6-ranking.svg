@@ -32,7 +32,7 @@
         </tr>
         <tr>
           <td class="name x2">李佳恩</td>
-          <td>65</td>
+          <td>66</td>
           <td>1</td>
           <td class="name s2">成珏</td>
           <td>33</td>
@@ -42,25 +42,25 @@
           <td class="summary"></td>
         </tr>
         <tr>
-          <td class="name x">张嘉予</td>
-          <td>43</td>
+          <td class="name x2">吕梦莹</td>
+          <td>44</td>
           <td>2</td>
           <td class="name h2">孙珍妮</td>
-          <td>28</td>
+          <td>29</td>
           <td>6</td>
           <td class="name summary">25百分位</td>
-          <td class="summary">43</td>
+          <td class="summary">43.5</td>
           <td class="summary"></td>
         </tr>
         <tr>
-          <td class="name x2">吕梦莹</td>
+          <td class="name x">张嘉予</td>
           <td>43</td>
-          <td>2</td>
+          <td>3</td>
           <td class="name n2">黄彤扬</td>
           <td>14</td>
           <td>7</td>
           <td class="name summary">75百分位</td>
-          <td class="summary">30.5</td>
+          <td class="summary">31</td>
           <td class="summary"></td>
         </tr>
         <tr>
@@ -68,7 +68,7 @@
           <td>35</td>
           <td>4</td>
           <td class="name summary">平均</td>
-          <td class="summary">37.3</td>
+          <td class="summary">37.7</td>
           <td class="summary"></td>
         </tr>
       </table>
