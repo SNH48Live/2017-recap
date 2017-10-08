@@ -16,6 +16,10 @@ A full demo from the master branch can be found at <https://snh48live.org/2017-r
 
 Look into `bin`.
 
+# Caveats
+
+- matplotlib needs to be [patched](https://gist.github.com/zmwangx/23cdfc41fd7387013a95c8f684c59bd5) in order to use the Songti SC font on macOS.
+
 # TODOs
 
 - Populate `data/performances.raw.json` gradually and at the end of the year.
