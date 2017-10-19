@@ -42,7 +42,7 @@
           <td class="high">34</td>
           <td class="s2">李宇琪</td>
           <td>16</td>
-          <td class="high">36</td>
+          <td class="high">38</td>
         </tr>
         <tr>
           <td class="n2">李艺彤</td>
@@ -50,10 +50,10 @@
           <td class="low">23</td>
           <td class="s2">张语格</td>
           <td>9</td>
-          <td class="low">22</td>
+          <td class="low">23</td>
           <td class="summary">平均</td>
           <td class="summary"></td>
-          <td class="summary">24.2</td>
+          <td class="summary">24.7</td>
         </tr>
         <tr>
           <td class="n2">黄婷婷</td>
@@ -72,10 +72,10 @@
           <td class="low">20</td>
           <td class="s2">戴萌</td>
           <td>11</td>
-          <td class="high">34</td>
+          <td class="high">36</td>
           <td class="summary">25百分位</td>
           <td class="summary"></td>
-          <td class="summary">33.5</td>
+          <td class="summary">34</td>
         </tr>
         <tr>
           <td class="n2">陆婷</td>
@@ -83,7 +83,7 @@
           <td class="high">25</td>
           <td class="s2">孔肖吟</td>
           <td>12</td>
-          <td class="high">33</td>
+          <td class="high">34</td>
           <td class="summary">75百分位</td>
           <td class="summary"></td>
           <td class="summary">20.5</td>
@@ -102,7 +102,7 @@
           <td class="low">19</td>
           <td class="s2">吴哲晗</td>
           <td>15</td>
-          <td class="high">34</td>
+          <td class="high">36</td>
         </tr>
       </table>
       <footer>
