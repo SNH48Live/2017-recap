@@ -4822,7 +4822,7 @@
   {
     "date": "20170906",
     "affiliation": "x2",
-    "stage": "代号XⅡ",
+    "stage": null,
     "title": "20170906 SNH48 Team XⅡ 剧场四周年特别公演",
     "performers": [
       "刘菊子",
@@ -4846,7 +4846,7 @@
   {
     "date": "20170907",
     "affiliation": "x",
-    "stage": "梦想的旗帜",
+    "stage": null,
     "title": "20170907 SNH48 Team X 剧场四周年特别公演",
     "performers": [
       "吕一",
@@ -4868,7 +4868,7 @@
   {
     "date": "20170908",
     "affiliation": "h2",
-    "stage": "美丽世界",
+    "stage": null,
     "title": "20170908 SNH48 Team HⅡ 剧场四周年特别公演",
     "performers": [
       "郝婉晴",
@@ -4894,7 +4894,7 @@
   {
     "date": "20170909",
     "affiliation": "s2",
-    "stage": "第48区",
+    "stage": null,
     "title": "20170909 SNH48 Team SⅡ 剧场四周年特别公演",
     "performers": [
       "陈思",
@@ -4918,7 +4918,7 @@
   {
     "date": "20170910",
     "affiliation": "n2",
-    "stage": "专属派对",
+    "stage": null,
     "title": "20170910 SNH48 Team NⅡ 剧场四周年特别公演",
     "performers": [
       "陈佳莹",
