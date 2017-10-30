@@ -31,7 +31,7 @@
           <th>排名</th>
         </tr>
         <tr>
-          <td class="name x2">曾晓雯</td>
+          <td class="name h2">袁一琦</td>
           <td>62</td>
           <td>1</td>
           <td class="name n2">刘菊子</td>
@@ -42,9 +42,9 @@
           <td>13</td>
         </tr>
         <tr>
-          <td class="name s2">吕一</td>
-          <td>61</td>
-          <td>2</td>
+          <td class="name x2">曾晓雯</td>
+          <td>62</td>
+          <td>1</td>
           <td class="name x">姚祎纯</td>
           <td>49</td>
           <td>7</td>
@@ -53,19 +53,19 @@
           <td>14</td>
         </tr>
         <tr>
-          <td class="name h2">袁一琦</td>
+          <td class="name s2">吕一</td>
           <td>61</td>
-          <td>2</td>
+          <td>3</td>
           <td class="name n2">江真仪</td>
           <td>43</td>
           <td>9</td>
           <td class="name summary">平均</td>
-          <td class="summary">44.9</td>
+          <td class="summary">45</td>
           <td class="summary"></td>
         </tr>
         <tr>
           <td class="name x">祁静</td>
-          <td>59</td>
+          <td>60</td>
           <td>4</td>
           <td class="name n2">许逸</td>
           <td>42</td>
@@ -82,7 +82,7 @@
           <td>40</td>
           <td>11</td>
           <td class="name summary">25百分位</td>
-          <td class="summary">57.8</td>
+          <td class="summary">58.5</td>
           <td class="summary"></td>
         </tr>
         <tr>
