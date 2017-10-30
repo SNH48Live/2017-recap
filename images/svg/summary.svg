@@ -43,10 +43,10 @@
         </tr>
         <tr>
           <td class="category snh48">SNH48</td>
-          <td class="">34.4</td>
+          <td class="">34.2</td>
           <td class="">37</td>
           <td class="">47</td>
-          <td class="">24</td>
+          <td class="">22.5</td>
         </tr>
         <tr class="divider"><td colspan="5"></td></tr>
         <tr>
@@ -65,10 +65,10 @@
         </tr>
         <tr>
           <td class="category h2">Team HⅡ</td>
-          <td class="high">37.0</td>
-          <td class="high">43.5</td>
-          <td class="high">51.2</td>
-          <td class="high">26.5</td>
+          <td class="high">35.6</td>
+          <td class="high">42</td>
+          <td class="high">51</td>
+          <td class="low">19</td>
         </tr>
         <tr>
           <td class="category x">Team X</td>
@@ -122,10 +122,10 @@
         </tr>
         <tr>
           <td class="category gen6">六期生</td>
-          <td class="high">42.6</td>
-          <td class="high">39</td>
-          <td class="high">48.5</td>
-          <td class="high">36</td>
+          <td class="high">37.2</td>
+          <td class="high">38.5</td>
+          <td class="high">48.2</td>
+          <td class="high">29.5</td>
         </tr>
         <tr>
           <td class="category gen7">七期生</td>
