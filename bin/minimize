@@ -18,6 +18,6 @@ for svg in $svg_dir/*.svg; do
         continue
     }
 
-    svgo $svg $minsvg
+    svgo -o $minsvg $svg
     echo $minsvg
 done
