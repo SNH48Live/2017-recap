@@ -35,10 +35,10 @@
           <td>68</td>
           <td>1</td>
           <td class="name s2">陈思</td>
-          <td>42</td>
+          <td>43</td>
           <td>11</td>
           <td class="name s2">张语格</td>
-          <td>27</td>
+          <td>28</td>
           <td>20</td>
         </tr>
         <tr>
@@ -46,7 +46,7 @@
           <td>55</td>
           <td>2</td>
           <td class="name s2">李宇琪</td>
-          <td>42</td>
+          <td>43</td>
           <td>11</td>
           <td class="name s2">温晶婕</td>
           <td>20</td>
@@ -54,10 +54,10 @@
         </tr>
         <tr>
           <td class="name s2">袁丹妮</td>
-          <td>51</td>
+          <td>52</td>
           <td>3</td>
           <td class="name s2">吴哲晗</td>
-          <td>41</td>
+          <td>42</td>
           <td>13</td>
           <td class="name s2">沈之琳</td>
           <td>16</td>
@@ -65,7 +65,7 @@
         </tr>
         <tr>
           <td class="name s2">钱蓓婷</td>
-          <td>49</td>
+          <td>50</td>
           <td>4</td>
           <td class="name s2">成珏</td>
           <td>40</td>
@@ -76,62 +76,62 @@
         </tr>
         <tr>
           <td class="name s2">徐子轩</td>
-          <td>48</td>
+          <td>49</td>
           <td>5</td>
-          <td class="name s2">赵韩倩</td>
+          <td class="name s2">戴萌</td>
           <td>40</td>
           <td>14</td>
           <td class="name summary">平均</td>
-          <td class="summary">39.6</td>
+          <td class="summary">40.2</td>
           <td class="summary"></td>
         </tr>
         <tr>
           <td class="name s2">蒋芸</td>
-          <td>47</td>
+          <td>48</td>
           <td>6</td>
-          <td class="name s2">戴萌</td>
-          <td>39</td>
-          <td>16</td>
+          <td class="name s2">莫寒</td>
+          <td>40</td>
+          <td>14</td>
           <td class="name summary">中位</td>
-          <td class="summary">41.5</td>
+          <td class="summary">42.5</td>
           <td class="summary"></td>
         </tr>
         <tr>
           <td class="name s2">袁雨桢</td>
-          <td>46</td>
+          <td>47</td>
           <td>7</td>
-          <td class="name s2">莫寒</td>
-          <td>39</td>
-          <td>16</td>
+          <td class="name s2">赵韩倩</td>
+          <td>40</td>
+          <td>14</td>
           <td class="name summary">25百分位</td>
-          <td class="summary">46.2</td>
+          <td class="summary">47.2</td>
+          <td class="summary"></td>
+        </tr>
+        <tr>
+          <td class="name s2">徐晨辰</td>
+          <td>46</td>
+          <td>8</td>
+          <td class="name s2">陈观慧</td>
+          <td>38</td>
+          <td>18</td>
+          <td class="name summary">75百分位</td>
+          <td class="summary">38</td>
           <td class="summary"></td>
         </tr>
         <tr>
           <td class="name s2">赵晔</td>
           <td>46</td>
-          <td>7</td>
+          <td>8</td>
           <td class="name s2">孔肖吟</td>
           <td>38</td>
           <td>18</td>
-          <td class="name summary">75百分位</td>
-          <td class="summary">37.8</td>
-          <td class="summary"></td>
-        </tr>
-        <tr>
-          <td class="name s2">徐晨辰</td>
-          <td>45</td>
-          <td>9</td>
-          <td class="name s2">陈观慧</td>
-          <td>37</td>
-          <td>19</td>
         </tr>
         <tr>
           <td class="name s2">孙芮</td>
-          <td>44</td>
+          <td>45</td>
           <td>10</td>
           <td class="name s2">许佳琪</td>
-          <td>27</td>
+          <td>28</td>
           <td>20</td>
         </tr>
       </table>
