@@ -47,18 +47,18 @@
         <tr>
           <td class="x">宋昕冉</td>
           <td>18</td>
-          <td class="low">41</td>
+          <td class="">42</td>
           <td class="s2">孔肖吟</td>
           <td>25</td>
           <td class="high">43</td>
           <td class="summary">平均</td>
           <td class="summary"></td>
-          <td class="summary">41.7</td>
+          <td class="summary">42</td>
         </tr>
         <tr>
           <td class="h2">许杨玉琢</td>
           <td>19</td>
-          <td class="high">49</td>
+          <td class="high">50</td>
           <td class="n2">易嘉爱</td>
           <td>26</td>
           <td class="low">34</td>
@@ -75,7 +75,7 @@
           <td class="high">53</td>
           <td class="summary">25百分位</td>
           <td class="summary"></td>
-          <td class="summary">49.5</td>
+          <td class="summary">50</td>
         </tr>
         <tr>
           <td class="h2">孙珍妮</td>
@@ -86,15 +86,15 @@
           <td class="high">50</td>
           <td class="summary">75百分位</td>
           <td class="summary"></td>
-          <td class="summary">39</td>
+          <td class="summary">39.5</td>
         </tr>
         <tr>
           <td class="x2">费沁源</td>
           <td>22</td>
-          <td class="low">40</td>
+          <td class="low">41</td>
           <td class="h2">谢妮</td>
           <td>30</td>
-          <td class="high">61</td>
+          <td class="high">62</td>
         </tr>
         <tr>
           <td class="s2">吴哲晗</td>
@@ -102,7 +102,7 @@
           <td class="high">44</td>
           <td class="x2">洪珮雲</td>
           <td>31</td>
-          <td class="high">50</td>
+          <td class="high">51</td>
         </tr>
       </table>
       <footer>
