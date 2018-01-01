@@ -43,9 +43,9 @@
         </tr>
         <tr>
           <td class="category snh48">SNH48</td>
-          <td class="">41.5</td>
-          <td class="">44</td>
-          <td class="">55.8</td>
+          <td class="">41.6</td>
+          <td class="">44.5</td>
+          <td class="">56</td>
           <td class="">26.2</td>
         </tr>
         <tr class="divider"><td colspan="5"></td></tr>
@@ -79,10 +79,10 @@
         </tr>
         <tr>
           <td class="category x2">Team XⅡ</td>
-          <td class="high">46.5</td>
-          <td class="high">52</td>
-          <td class="high">60.2</td>
-          <td class="high">33.5</td>
+          <td class="high">47.3</td>
+          <td class="high">53</td>
+          <td class="high">61</td>
+          <td class="high">33.8</td>
         </tr>
         <tr class="divider"><td colspan="5"></td></tr>
         <tr>
@@ -115,28 +115,28 @@
         </tr>
         <tr>
           <td class="category gen5">五期生</td>
-          <td class="high">45.1</td>
-          <td class="high">47.5</td>
-          <td class="high">56</td>
+          <td class="high">45.6</td>
+          <td class="high">48.5</td>
+          <td class="high">56.8</td>
           <td class="high">31.2</td>
         </tr>
         <tr>
           <td class="category gen6">六期生</td>
-          <td class="high">44.8</td>
-          <td class="high">44.5</td>
-          <td class="high">56.5</td>
+          <td class="high">45</td>
+          <td class="">44.5</td>
+          <td class="high">57.2</td>
           <td class="high">33</td>
         </tr>
         <tr>
           <td class="category gen7">七期生</td>
-          <td class="high">51.1</td>
+          <td class="high">51.2</td>
           <td class="high">53.5</td>
-          <td class="high">68.2</td>
+          <td class="high">69.2</td>
           <td class="high">41.5</td>
         </tr>
         <tr>
           <td class="category gen8">八期生</td>
-          <td class="low">19.3</td>
+          <td class="low">19.4</td>
           <td class="low">14</td>
           <td class="low">32.8</td>
           <td class="low">3.8</td>
@@ -151,17 +151,17 @@
         </tr>
         <tr>
           <td class="category tier3-2">三选梦想组</td>
-          <td class="high">42</td>
-          <td class="">44</td>
+          <td class="high">42.2</td>
+          <td class="low">44</td>
           <td class="low">50</td>
-          <td class="high">39.5</td>
+          <td class="high">40</td>
         </tr>
         <tr>
           <td class="category tier3-3">三选起飞组</td>
-          <td class="high">53.4</td>
-          <td class="high">56</td>
+          <td class="high">53.5</td>
+          <td class="high">57</td>
           <td class="high">61.5</td>
-          <td class="high">45</td>
+          <td class="high">45.5</td>
         </tr>
         <tr>
           <td class="category tier4-1">四选星光组</td>
@@ -172,7 +172,7 @@
         </tr>
         <tr>
           <td class="category tier4-2">四选高飞组</td>
-          <td class="high">49.2</td>
+          <td class="high">49.4</td>
           <td class="high">48</td>
           <td class="low">54</td>
           <td class="high">42</td>
@@ -182,13 +182,13 @@
           <td class="high">55.5</td>
           <td class="high">52</td>
           <td class="high">62</td>
-          <td class="high">45.5</td>
+          <td class="high">46</td>
         </tr>
         <tr>
           <td class="category tier4-4">四选奔跑组</td>
-          <td class="high">51.5</td>
+          <td class="high">51.6</td>
           <td class="high">52</td>
-          <td class="high">56</td>
+          <td class="">56</td>
           <td class="high">46</td>
         </tr>
       </table>
